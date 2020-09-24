@@ -1,0 +1,56 @@
+[0m[[0minfo[0m] [0mCreating a distributable package in target/pack[0m
+[0m[[0minfo[0m] [0mCopying libraries to target/pack/lib[0m
+[0m[[0minfo[0m] [0mproject jars:[0m
+[0m[[0minfo[0m] [0mtarget/scala-2.11/repetita_2.11-0.1-SNAPSHOT.jar[0m
+[0m[[0minfo[0m] [0mproject dependencies:[0m
+[0m[[0minfo[0m] [0moscar:oscar-util_2.11:4.0.0-SNAPSHOT[0m
+[0m[[0minfo[0m] [0mxerces:xmlParserAPIs:2.6.2[0m
+[0m[[0minfo[0m] [0mlog4j:log4j:1.2.12[0m
+[0m[[0minfo[0m] [0mnet.sourceforge.collections:collections-generic:4.01[0m
+[0m[[0minfo[0m] [0mcom.google.guava:guava:19.0[0m
+[0m[[0minfo[0m] [0morg.swinglabs:swingx-ws:1.0[0m
+[0m[[0minfo[0m] [0mnet.sf.ezmorph:ezmorph:0.8.1[0m
+[0m[[0minfo[0m] [0mxalan:xalan:2.7.0[0m
+[0m[[0minfo[0m] [0mavalon-framework:avalon-framework:4.1.3[0m
+[0m[[0minfo[0m] [0morg.jfree:jfreechart:1.5.0[0m
+[0m[[0minfo[0m] [0morg.scala-lang.modules:scala-xml_2.11:1.3.0[0m
+[0m[[0minfo[0m] [0mnet.sf.jung:jung-api:2.1.1[0m
+[0m[[0minfo[0m] [0morg.scala-lang.modules:scala-parser-combinators_2.11:1.1.2[0m
+[0m[[0minfo[0m] [0mrome:rome:0.8[0m
+[0m[[0minfo[0m] [0mjaxen:jaxen:1.1-beta-8[0m
+[0m[[0minfo[0m] [0mjavax.servlet:servlet-api:2.3[0m
+[0m[[0minfo[0m] [0mcommons-httpclient:commons-httpclient:3.0.1[0m
+[0m[[0minfo[0m] [0morg.scala-lang:scala-library:2.11.4[0m
+[0m[[0minfo[0m] [0mdom4j:dom4j:1.6.1[0m
+[0m[[0minfo[0m] [0mcom.jhlabs:filters:2.0.235[0m
+[0m[[0minfo[0m] [0moscar:oscar-algo_2.11:4.0.0-SNAPSHOT[0m
+[0m[[0minfo[0m] [0mcommons-beanutils:commons-beanutils:1.7.0[0m
+[0m[[0minfo[0m] [0mxerces:xercesImpl:2.8.1[0m
+[0m[[0minfo[0m] [0mcommons-lang:commons-lang:2.2[0m
+[0m[[0minfo[0m] [0mjunit:junit:3.8.1[0m
+[0m[[0minfo[0m] [0mcommons-logging:commons-logging:1.1[0m
+[0m[[0minfo[0m] [0mxom:xom:1.1[0m
+[0m[[0minfo[0m] [0mlogkit:logkit:1.0.1[0m
+[0m[[0minfo[0m] [0mnet.sf.jung:jung-visualization:2.1.1[0m
+[0m[[0minfo[0m] [0moscar:oscar-visual_2.11:4.0.0-SNAPSHOT[0m
+[0m[[0minfo[0m] [0moscar:oscar-cp_2.11:4.0.0-SNAPSHOT[0m
+[0m[[0minfo[0m] [0mnet.sf.jung:jung-algorithms:2.1.1[0m
+[0m[[0minfo[0m] [0mnet.sf.json-lib:json-lib:0.9[0m
+[0m[[0minfo[0m] [0mnet.sf.jung:jung-graph-impl:2.1.1[0m
+[0m[[0minfo[0m] [0mjdom:jdom:1.0[0m
+[0m[[0minfo[0m] [0morg.swinglabs:swing-worker:1.1[0m
+[0m[[0minfo[0m] [0morg.swinglabs:swingx:1.0[0m
+[0m[[0minfo[0m] [0mcommons-codec:commons-codec:1.3[0m
+[0m[[0minfo[0m] [0mjtidy:jtidy:4aug2000r7-dev[0m
+[0m[[0minfo[0m] [0munmanaged dependencies:[0m
+[0m[[0minfo[0m] [0m/home/thanh/code/lib/gurobi.jar[0m
+[0m[[0minfo[0m] [0mexplicit dependencies:[0m
+[0m[[0minfo[0m] [0mCreate a bin folder: target/pack/bin[0m
+[0m[[0minfo[0m] [0mGenerating launch scripts[0m
+[0m[[0minfo[0m] [0mmain class for repetita: edu.repetita.main.Main[0m
+[0m[[0minfo[0m] [0mGenerating target/pack/bin/repetita[0m
+[0m[[0minfo[0m] [0mGenerating target/pack/bin/repetita.bat[0m
+[0m[[0minfo[0m] [0mpacked resource directories = /home/thanh/code/src/pack[0m
+[0m[[0minfo[0m] [0mGenerating target/pack/Makefile[0m
+[0m[[0minfo[0m] [0mGenerating target/pack/VERSION[0m
+[0m[[0minfo[0m] [0mdone.[0m
