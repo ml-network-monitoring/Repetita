@@ -54,6 +54,8 @@ public class MultiStepSolverRun extends Scenario {
         Topology topology = this.setting.getTopology();
         int nIterations = demandsList.size();
 
+        System.out.println("nIterations: " + nIterations);
+
         // extract previous routing configuration
         RoutingConfiguration lastConfig = setting.getRoutingConfiguration();
 
