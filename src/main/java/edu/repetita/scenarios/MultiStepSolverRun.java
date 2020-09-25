@@ -66,9 +66,13 @@ public class MultiStepSolverRun extends Scenario {
             Demands currentDemands = demandsList.get(iteration % demandsList.size());
             // create a new (minimalistic) setting and analyze it
             Setting currentSetting = new Setting();
+            System.out.println("iteration " + iteration);
             currentSetting.setTopology(topology);
+            System.out.println("iteration " + iteration);
             currentSetting.setDemands(currentDemands);
+            System.out.println("iteration " + iteration);
             currentSetting.setRoutingConfiguration(lastConfig);
+            System.out.println("iteration " + iteration);
             postOpt = analyzer.analyze(currentSetting);
             System.out.println("iteration " + iteration);
             System.out.println(postOpt.maxLinkLoad);
