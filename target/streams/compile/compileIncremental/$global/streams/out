@@ -18,7 +18,7 @@
 [0m[[0minfo[0m] [0mCompiling 99 Scala sources and 57 Java sources to /home/thanh/code/target/scala-2.11/classes...[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.15:component from component compiler for Scala 2.11.4[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.15:component from component compiler for Scala 2.11.4[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 6a85b743, interfacing (CompilerInterface) with Scala compiler version 2.11.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 5c856d5f, interfacing (CompilerInterface) with Scala compiler version 2.11.4[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/thanh/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.4.jar[0m
@@ -27,13 +27,13 @@
 [0m[[33mwarn[0m] [0mthere were 7 deprecation warnings; re-run with -deprecation for details[0m
 [0m[[33mwarn[0m] [0mthere were 10 feature warnings; re-run with -feature for details[0m
 [0m[[33mwarn[0m] [0mtwo warnings found[0m
-[0m[[0mdebug[0m] [0mScala compilation took 10.609596668 s[0m
-[0m[[0mdebug[0m] [0mAttempting to call com.sun.tools.javac.api.JavacTool@48e6ee3d directly...[0m
+[0m[[0mdebug[0m] [0mScala compilation took 10.557492038 s[0m
+[0m[[0mdebug[0m] [0mAttempting to call com.sun.tools.javac.api.JavacTool@6e79f34f directly...[0m
 [0m[[0minfo[0m] [0m/home/thanh/code/src/main/java/edu/repetita/analyses/Analyzer.java: Some input files use unchecked or unsafe operations.[0m
 [0m[[0minfo[0m] [0m/home/thanh/code/src/main/java/edu/repetita/analyses/Analyzer.java: Recompile with -Xlint:unchecked for details.[0m
-[0m[[0mdebug[0m] [0mJava compilation took 0.984336686 s[0m
-[0m[[0mdebug[0m] [0mJava analysis took 0.239011331 s[0m
-[0m[[0mdebug[0m] [0mJava compile + analysis took 1.231786866 s[0m
+[0m[[0mdebug[0m] [0mJava compilation took 0.863565293 s[0m
+[0m[[0mdebug[0m] [0mJava analysis took 0.215053942 s[0m
+[0m[[0mdebug[0m] [0mJava compile + analysis took 1.086347724 s[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidating /home/thanh/code/src/main/java/edu/repetita/scenarios/SingleLinkFailureRobustness.java...[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /home/thanh/code/src/main/java/edu/repetita/scenarios/SingleLinkFailureRobustness.java...[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/thanh/code/src/main/java/edu/repetita/scenarios/SingleLinkFailureRobustness.java)[0m
@@ -63,6 +63,7 @@
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/io/RepetitaParser.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/paths/SRPaths.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/solvers/sr/DefoCP.java[0m
+[0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/scenarios/MultiStepSolverRun.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/simulators/specialized/ExplicitPathFlowSimulator.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/solvers/sr/SRLS.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/simulators/FlowSimulator.java[0m
@@ -511,6 +512,7 @@
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/core/Setting.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/core/Scenario.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/solvers/sr/DefoCP.java[0m
+[0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/scenarios/MultiStepSolverRun.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/simulators/specialized/ExplicitPathFlowSimulator.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/solvers/sr/SRLS.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/analyses/specialized/FlowSpecializedAnalyzer.java[0m
@@ -872,6 +874,7 @@
 [0m[[0mdebug[0m] [0m[naha] 	notify, wait, equals, getExplicitPaths, getSRPaths, RoutingConfiguration, notifyAll, setExplicitPaths, setSRPaths, <init>, clone, toString, getClass, hashCode.[0m
 [0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/core/Setting.java[0m
+[0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/scenarios/MultiStepSolverRun.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/core/RoutingConfiguration.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/scenarios/DemandChangeReoptimization.java[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidating /home/thanh/code/src/main/scala/be/ac/ucl/ingi/defo/Main.scala...[0m
@@ -1112,6 +1115,7 @@
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/io/RepetitaParser.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/paths/SRPaths.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/solvers/sr/DefoCP.java[0m
+[0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/scenarios/MultiStepSolverRun.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/simulators/specialized/ExplicitPathFlowSimulator.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/solvers/sr/SRLS.java[0m
 [0m[[0mdebug[0m] [0m[naha] Name hashing optimization doesn't apply to non-Scala dependency: /home/thanh/code/src/main/java/edu/repetita/core/Demands.java[0m
