@@ -38,22 +38,23 @@ public class MultiStepSolverRun extends Scenario {
         }
 
         // BEGIN: Thanh-san code
-        // extract useful information from setting
+        // extract useful information from setting like topo and demandchanges
         List<Demands> demandsList = this.setting.getDemandChanges();
         Topology topology = this.setting.getTopology();
         int nIterations = demandsList.size();
+
         // extract previous routing configuration
         RoutingConfiguration lastConfig = setting.getRoutingConfiguration();
+
         for (int iteration = 0; iteration < nIterations; iteration++) {
             // extract the new demand from demandsList
             Demands currentDemands = demandsList.get(iteration % demandsList.size());
             // create a new (minimalistic) setting and analyze it
-            Long timeBeforeChange = System.nanoTime();
             Setting currentSetting = new Setting();
             currentSetting.setTopology(topology);
             currentSetting.setDemands(currentDemands);
             currentSetting.setRoutingConfiguration(lastConfig);
-            analyses.put("Iteration " + Integer.toString(iteration) + " pre-optimization",analyzer.analyze(currentSetting,"pre-optimization"));
+            this.analyses.put("Iteration " + Integer.toString(iteration), analyzer.analyze(currentSetting));
         }
         // END: Thanh-san code
 

@@ -15,6 +15,9 @@ def get_args():
     parser.add_argument('--solver', type=str, default='MIPTwoSRNoSplit',
                         choices=['MIPTwoSRNoSplit'])
 
+    # parameter for scenario
+    parser.add_argument('--scenario', type=str, default='MultiStepSolverRun',
+                        choices=['MultiStepSolverRun'])
     # get args
     args = parser.parse_args()
 
@@ -29,6 +32,8 @@ def print_args(args):
     print('--------------REPETITA-----------------')
     print('---------------------------------------')
     print('    - dataset       :', args.dataset)
+    print('    - solver        :', args.solver)
+    print('    - scenario      :', args.scenario)
     print('---------------------------------------')
     print('    - home          :', args.home)
     print('    - repetita_home :', args.repetita_home)
@@ -50,6 +55,8 @@ def get_repetita_args(args, t):
                          '{}.{}.demands'.format(args.dataset, t + i)) for i in range(1, args.T + 1)]),
             '-solver',
             args.solver,
+            '-scenario',
+            args.scenario,
             '-outpaths',
             'out.txt'
             ]
