@@ -1,0 +1,47 @@
+import os
+import argparse
+
+def get_args():
+    # create argument parser
+    parser = argparse.ArgumentParser()
+
+    # parameter for dataset
+    parser.add_argument('--dataset', type=str, default='abilene_tm',
+                        choices=['abilene_tm', 'geant_tm', 'brain_tm'])
+
+    # parameter for solver
+    parser.add_argument('--solver', type=str, default='MIPTwoSRNoSplit',
+                        choices=['MIPTwoSRNoSplit'])
+
+    # get args
+    args = parser.parse_args()
+
+    # append other constants
+    args.repetita_home = os.getcwd()
+    args.home = os.path.join(os.path.dirname(args.repetita_home), 'code')
+
+    return args
+
+def print_args(args):
+    print('---------------------------------------')
+    print('--------------REPETITA-----------------')
+    print('---------------------------------------')
+    print('    - dataset       :', args.dataset)
+    print('---------------------------------------')
+    print('    - home          :', args.home)
+    print('    - repetita_home :', args.repetita_home)
+    print('---------------------------------------')
+
+def get_repetita_args(args, t):
+    args = ['./repetita',
+            '-graph',
+            os.path.join(args.home,
+                         'topo',
+                         '{}.graph'.format(args.dataset)),
+            '-demands',
+            os.path.join(args.home,
+                         'data',
+                         '{}.{}.demands'.format(args.dataset, t)),
+            '-solver',
+            args.solver]
+    return args
