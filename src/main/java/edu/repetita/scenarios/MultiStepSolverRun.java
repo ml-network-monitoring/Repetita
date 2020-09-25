@@ -10,7 +10,7 @@ import edu.repetita.simulators.FlowSimulator;
  *  and check the maximum link utilization of the returned paths.
  */
 
-public class SingleSolverRun extends Scenario {
+public class MultiStepSolverRun extends Scenario {
     @Override
     public String getDescription() {
         return "Runs the given solver on an input setting";
