@@ -17,6 +17,7 @@ Supported traffic engineering algorithms (solvers)
 Scenarios to evaluate the solutions computed by the above algorithms
 - SingleLinkFailureReoptimization      The solver is called to re-optimize the forwarding after every link failure in a randomly generated series
 - SingleLinkFailureRobustness          Runs a solver on a topology, stores the routing configuration computed by the solver, and evaluates how single link failures affect the computed configuration
+- MultiStepSolverRun                   Runs the given solver on an input setting
 - SingleSolverRun                      Runs the given solver on an input setting
 - DemandChangeReoptimization           Change demands and ask the configured solver to re-optimize
 
