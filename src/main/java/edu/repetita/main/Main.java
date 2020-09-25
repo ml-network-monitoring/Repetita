@@ -117,8 +117,7 @@ public class Main {
 		String graphFilename = null;
 		String demandsFilename = null;
         ArrayList<String> demandChangesFilenames = new ArrayList<>();
-		double timeLimit = 10;                                                                                   
-~                                                    
+		double timeLimit = 10;                              
 		int verboseLevel = 0;
 		boolean help = false;
 
