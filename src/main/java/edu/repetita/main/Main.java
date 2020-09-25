@@ -127,10 +127,10 @@ public class Main {
 		// parse command line arguments
 		int i = 0;
 		while (i < args.length) {
-			switch(args[i]) {
-
             System.out.println(args[i]);
             
+			switch(args[i]) {
+
 			case "-h": 
 				help=true;
 				break;
