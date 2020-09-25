@@ -50,7 +50,7 @@ def get_repetita_args(args, t):
                          'data',
                          '{}.{}.demands'.format(args.dataset, t)),
             '-demandchanges',
-            '-'.join([os.path.join(args.home,
+            ' '.join([os.path.join(args.home,
                          'data',
                          '{}.{}.demands'.format(args.dataset, t + i)) for i in range(1, args.T + 1)]),
             '-solver',

@@ -148,6 +148,7 @@ public class Main {
                 String next = args[++i];
                 while (! next.startsWith("-")){
                     demandChangesFilenames.add(next);
+                    System.out.println("-demandchanges " + next);
                     next = args[++i];
                 }
                 i--;
