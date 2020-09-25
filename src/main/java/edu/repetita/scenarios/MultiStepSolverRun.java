@@ -5,12 +5,17 @@ import edu.repetita.analyses.Analysis;
 import edu.repetita.io.RepetitaWriter;
 import edu.repetita.simulators.FlowSimulator;
 
+import java.util.List;
+
+
 /*
  *  Basic scenario: we run the solvers for a set amount of time,
  *  and check the maximum link utilization of the returned paths.
  */
 
 public class MultiStepSolverRun extends Scenario {
+    private Analyzer analyzer = Analyzer.getInstance();
+
     @Override
     public String getDescription() {
         return "Runs the given solver on an input setting";
