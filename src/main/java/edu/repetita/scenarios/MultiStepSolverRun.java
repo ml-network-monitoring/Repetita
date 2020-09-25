@@ -1,6 +1,6 @@
 package edu.repetita.scenarios;
 
-import edu.repetita.core.Scenario;
+import edu.repetita.core.*;
 import edu.repetita.analyses.Analysis;
 import edu.repetita.io.RepetitaWriter;
 import edu.repetita.simulators.FlowSimulator;
