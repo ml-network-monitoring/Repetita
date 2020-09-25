@@ -127,6 +127,7 @@ public class Main {
 		// parse command line arguments
 		int i = 0;
 		while (i < args.length) {
+
 			switch(args[i]) {
 			case "-h": 
 				help=true;
@@ -146,12 +147,10 @@ public class Main {
 
             case "-demandchanges":
                 String next = args[++i];
-                System.out.println(args[i]);
 
                 while (! next.startsWith("-")){
                     demandChangesFilenames.add(next);
                     next = args[++i];
-                    System.out.println(args[i]);
                 }
                 i--;
                 break;
@@ -187,6 +186,7 @@ public class Main {
 			i++;
 		}
 
+        System.out.println(demandChangesFilenames);
         // create storage (after having set the verbose level)
         storage = RepetitaStorage.getInstance();
 
