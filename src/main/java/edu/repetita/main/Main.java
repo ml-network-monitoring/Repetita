@@ -145,10 +145,12 @@ public class Main {
 				break;
 
             case "-demandchanges":
+                System.out.println("-demandchanges");
                 String next = args[++i];
+                System.out.println("-demandchanges " + next);
+
                 while (! next.startsWith("-")){
                     demandChangesFilenames.add(next);
-                    System.out.println("-demandchanges " + next);
                     next = args[++i];
                 }
                 i--;
