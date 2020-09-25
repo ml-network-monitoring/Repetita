@@ -8,6 +8,8 @@ def get_args():
     # parameter for dataset
     parser.add_argument('--dataset', type=str, default='abilene_tm',
                         choices=['abilene_tm', 'geant_tm', 'brain_tm'])
+    parser.add_argument('--T', type=int, default=6)
+    parser.add_argument('--num_test', type=int, default=2000)
 
     # parameter for solver
     parser.add_argument('--solver', type=str, default='MIPTwoSRNoSplit',
@@ -42,6 +44,13 @@ def get_repetita_args(args, t):
             os.path.join(args.home,
                          'data',
                          '{}.{}.demands'.format(args.dataset, t)),
+            '-demandchanges',
+            '-'.join([os.path.join(args.home,
+                         'data',
+                         '{}.{}.demands'.format(args.dataset, t + i)) for i in range(1, args.T + 1)]),
             '-solver',
-            args.solver]
+            args.solver,
+            '-outpaths',
+            'out.txt'
+            ]
     return args

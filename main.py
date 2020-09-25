@@ -7,11 +7,13 @@ def main():
     # print argument
     util.print_args(args)
 
-    # get repetita args
-    args = util.get_repetita_args(args, 0)
-    print(args)
-    stdout = util.call(args)
-    print(stdout)
+    # run te
+    for t in range(args.num_test):
+        if t % args.T == 0:
+            repetita_args = util.get_repetita_args(args, t)
+            print(' '.join(repetita_args))
+            stdout = util.call(repetita_args)
+            print(stdout)
 
 
 if __name__ == '__main__':
