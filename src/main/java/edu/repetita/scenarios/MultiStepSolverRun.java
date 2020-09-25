@@ -4,6 +4,8 @@ import edu.repetita.core.*;
 import edu.repetita.analyses.Analysis;
 import edu.repetita.io.RepetitaWriter;
 import edu.repetita.simulators.FlowSimulator;
+import edu.repetita.analyses.Analyzer;
+
 
 import java.util.List;
 
