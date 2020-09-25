@@ -42,7 +42,7 @@ public class MultiStepSolverRun extends Scenario {
         Analysis postOpt = analyzer.analyze(this.setting);
         postOpt.setId("post-optimization");
         if (this.keepAnalyses){
-            this.analyses.put("post-optimization",postOpt);
+            this.analyses.put("post-optimization", postOpt);
         }
 
         // BEGIN: Thanh-san code
@@ -62,7 +62,8 @@ public class MultiStepSolverRun extends Scenario {
             currentSetting.setTopology(topology);
             currentSetting.setDemands(currentDemands);
             currentSetting.setRoutingConfiguration(lastConfig);
-            this.analyses.put("Iteration " + Integer.toString(iteration), analyzer.analyze(currentSetting));
+            postOpt = analyzer.analyze(currentSetting);
+            this.analyses.put("iteration " + Integer.toString(iteration), postOpt);
         }
         // END: Thanh-san code
 
