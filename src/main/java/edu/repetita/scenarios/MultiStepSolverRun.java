@@ -51,7 +51,6 @@ public class MultiStepSolverRun extends Scenario {
         // BEGIN: Thanh-san code
         // extract useful information from setting like topo and demandchanges
         List<Demands> demandsList = this.setting.getDemandChanges();
-        List<Analysis> analysisList = new ArrayList();
         Topology topology = this.setting.getTopology();
         int nIterations = demandsList.size();
 
@@ -67,13 +66,8 @@ public class MultiStepSolverRun extends Scenario {
             currentSetting.setTopology(topology);
             currentSetting.setDemands(currentDemands);
             currentSetting.setRoutingConfiguration(lastConfig);
-            analysisList.add(analyzer.analyze(currentSetting));
             postOpt = analyzer.analyze(currentSetting);
-            // TODO Set id
-            this.analyses.put("iteration " + Integer.toString(iteration), analysisList.get(iteration));
-            System.out.println("iteration " + Integer.toString(iteration), postOpt);
-            // print results
-            this.print(analyzer.compare(preOpt, analysisList.get(iteration)));
+            System.out.println("iteration " + Integer.toString(iteration), postOpt.maxLinkLoad);
         }
         // END: Thanh-san code
 
