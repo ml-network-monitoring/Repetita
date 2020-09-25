@@ -128,9 +128,8 @@ public class Main {
 		int i = 0;
 		while (i < args.length) {
             System.out.println(args[i]);
-            
-			switch(args[i]) {
 
+			switch(args[i]) {
 			case "-h": 
 				help=true;
 				break;
@@ -148,6 +147,8 @@ public class Main {
 				break;
 
             case "-demandchanges":
+                String next = args[++i];
+
                 while (! next.startsWith("-")){
                     demandChangesFilenames.add(next);
                     next = args[++i];
