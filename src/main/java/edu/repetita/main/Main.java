@@ -127,8 +127,6 @@ public class Main {
 		// parse command line arguments
 		int i = 0;
 		while (i < args.length) {
-            System.out.println(args[i]);
-
 			switch(args[i]) {
 			case "-h": 
 				help=true;
@@ -148,10 +146,12 @@ public class Main {
 
             case "-demandchanges":
                 String next = args[++i];
+                System.out.println(args[i]);
 
                 while (! next.startsWith("-")){
                     demandChangesFilenames.add(next);
                     next = args[++i];
+                    System.out.println(args[i]);
                 }
                 i--;
                 break;
