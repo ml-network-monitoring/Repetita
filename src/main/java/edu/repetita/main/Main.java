@@ -117,7 +117,8 @@ public class Main {
 		String graphFilename = null;
 		String demandsFilename = null;
         ArrayList<String> demandChangesFilenames = new ArrayList<>();
-		double timeLimit = 10;
+		double timeLimit = 10;                                                                                   
+~                                                    
 		int verboseLevel = 0;
 		boolean help = false;
 
@@ -149,7 +150,13 @@ public class Main {
                 String next = args[++i];
 
                 while (! next.startsWith("-")){
-                    demandChangesFilenames.add(next);
+                    // demandChangesFilenames.add(next);
+                    String[] nextSplit = next.split("\\s+");
+                    System.out.println(nextSplit.length);
+                    for(int i=0; i<nextSplit.length; i++){
+                        demandChangesFilenames.add(nextSplit[i]);
+                    }
+
                     next = args[++i];
                 }
                 i--;
