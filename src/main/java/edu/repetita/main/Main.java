@@ -152,8 +152,8 @@ public class Main {
                     // demandChangesFilenames.add(next);
                     String[] nextSplit = next.split("\\s+");
                     System.out.println(nextSplit.length);
-                    for(int i=0; i<nextSplit.length; i++){
-                        demandChangesFilenames.add(nextSplit[i]);
+                    for(int j=0; j<nextSplit.length; j++){
+                        demandChangesFilenames.add(nextSplit[j]);
                     }
 
                     next = args[++i];
