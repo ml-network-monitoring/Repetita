@@ -29,12 +29,33 @@ public class MultiStepSolverRun extends Scenario {
         this.solver.solve(this.setting,timeMillis);
         long optTime = this.solver.solveTime(this.setting);
 
+
         // perform post-optimization analyses
         Analysis postOpt = analyzer.analyze(this.setting);
         postOpt.setId("post-optimization");
         if (this.keepAnalyses){
             this.analyses.put("post-optimization",postOpt);
         }
+
+        // BEGIN: Thanh-san code
+        // extract useful information from setting
+        List<Demands> demandsList = this.setting.getDemandChanges();
+        Topology topology = this.setting.getTopology();
+        int nIterations = demandsList.size();
+        // extract previous routing configuration
+        RoutingConfiguration lastConfig = setting.getRoutingConfiguration();
+        for (int iteration = 0; iteration < nIterations; iteration++) {
+            // extract the new demand from demandsList
+            Demands currentDemands = demandsList.get(iteration % demandsList.size());
+            // create a new (minimalistic) setting and analyze it
+            Long timeBeforeChange = System.nanoTime();
+            Setting currentSetting = new Setting();
+            currentSetting.setTopology(topology);
+            currentSetting.setDemands(currentDemands);
+            currentSetting.setRoutingConfiguration(lastConfig);
+            analyses.put("Iteration " + Integer.toString(iteration) + " pre-optimization",analyzer.analyze(currentSetting,"pre-optimization"));
+        }
+        // END: Thanh-san code
 
         // print results
         this.print(analyzer.compare(preOpt,postOpt));
