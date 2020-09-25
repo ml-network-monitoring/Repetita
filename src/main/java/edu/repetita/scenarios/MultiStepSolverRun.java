@@ -60,7 +60,6 @@ public class MultiStepSolverRun extends Scenario {
         RoutingConfiguration lastConfig = setting.getRoutingConfiguration();
 
         for (int iteration = 0; iteration < nIterations; iteration++) {
-            System.out.println("iteration " + iteration);
 
             // create new analysis
             // extract the new demand from demandsList
@@ -71,6 +70,7 @@ public class MultiStepSolverRun extends Scenario {
             currentSetting.setDemands(currentDemands);
             currentSetting.setRoutingConfiguration(lastConfig);
             postOpt = analyzer.analyze(currentSetting);
+            System.out.println("iteration " + iteration);
             System.out.println(postOpt.maxLinkLoad);
         }
         // END: Thanh-san code
