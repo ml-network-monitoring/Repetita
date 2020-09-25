@@ -14,6 +14,7 @@ def main():
             print(' '.join(repetita_args))
             stdout = util.call(repetita_args)
             print(stdout)
+            break
 
 
 if __name__ == '__main__':

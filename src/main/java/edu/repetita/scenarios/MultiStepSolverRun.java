@@ -25,6 +25,7 @@ public class MultiStepSolverRun extends Scenario {
 
     @Override
     public void run(long timeMillis) {
+        System.out.println("Running MultitStepSolverRun hehehehehehehehhe");
         // perform pre-optimization analyses
         Analysis preOpt = analyzer.analyze(this.setting);
         preOpt.setId("pre-optimization");
