@@ -151,7 +151,6 @@ public class Main {
                 while (! next.startsWith("-")){
                     // demandChangesFilenames.add(next);
                     String[] nextSplit = next.split("\\s+");
-                    System.out.println(nextSplit.length);
                     for(int j=0; j<nextSplit.length; j++){
                         demandChangesFilenames.add(nextSplit[j]);
                     }
@@ -192,7 +191,6 @@ public class Main {
 			i++;
 		}
 
-        System.out.println(demandChangesFilenames);
         // create storage (after having set the verbose level)
         storage = RepetitaStorage.getInstance();
 
