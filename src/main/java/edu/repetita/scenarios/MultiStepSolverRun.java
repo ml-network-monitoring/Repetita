@@ -25,7 +25,6 @@ public class MultiStepSolverRun extends Scenario {
 
     @Override
     public void run(long timeMillis) {
-        System.out.println("Running MultitStepSolverRun hehehehehehehehhe");
         // perform pre-optimization analyses
         Analysis preOpt = analyzer.analyze(this.setting);
         preOpt.setId("pre-optimization");
@@ -45,6 +44,10 @@ public class MultiStepSolverRun extends Scenario {
             this.analyses.put("post-optimization", postOpt);
         }
 
+        // print results
+        this.print(analyzer.compare(preOpt, postOpt));
+        this.print("Optimization time (in seconds): " + optTime / 1000000000.0);
+
         // BEGIN: Thanh-san code
         // extract useful information from setting like topo and demandchanges
         List<Demands> demandsList = this.setting.getDemandChanges();
@@ -63,13 +66,13 @@ public class MultiStepSolverRun extends Scenario {
             currentSetting.setDemands(currentDemands);
             currentSetting.setRoutingConfiguration(lastConfig);
             postOpt = analyzer.analyze(currentSetting);
+            // TODO Set id
             this.analyses.put("iteration " + Integer.toString(iteration), postOpt);
+            System.out.println("iteration " + Integer.toString(iteration), postOpt);
+            // print results
+            this.print(analyzer.compare(preOpt, postOpt));
         }
         // END: Thanh-san code
-
-        // print results
-        this.print(analyzer.compare(preOpt,postOpt));
-        this.print("Optimization time (in seconds): " + optTime / 1000000000.0);
 
         // save on paths file (if asked by the user)
         RepetitaWriter.writeToPathFile(FlowSimulator.getInstance().getNextHops());
