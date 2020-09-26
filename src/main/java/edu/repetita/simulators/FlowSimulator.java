@@ -68,9 +68,9 @@ public class FlowSimulator {
         for (SpecializedFlowSimulator sim: this.simulators){
             // compute flows
             sim.setup(this.setting, simulatedDemands);
-            System.out.println("before just Simulated");
+            System.out.println("before just Simulated using: " + sim);
             Collection<String> justSimulated = sim.computeFlows();
-            System.out.println("after just Simulated");
+            System.out.println("after just Simulated using: " + sim);
             simulatedDemands.addAll(justSimulated);
 
             // update maxLinkLoad on each edge
