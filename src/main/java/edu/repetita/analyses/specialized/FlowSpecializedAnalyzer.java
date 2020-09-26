@@ -25,20 +25,15 @@ public class FlowSpecializedAnalyzer implements SpecializedAnalyzer {
 
     @Override
     public void analyze(Setting setting, Analysis analysis) {
-        System.out.println("pass");
         flowSimulator.setup(setting);
-        System.out.println("pass");
         flowSimulator.computeFlows();
 
-        System.out.println("pass");
         analysis.maxLinkLoad = this.getMaxLoad();
         double mcfLoad = -1;
-        System.out.println("pass");
         if (this.compareWithMCF){
             MCF mcfComputer = new MCF(setting.getTopology(), setting.getDemands(), false);
             mcfLoad = mcfComputer.computeMaxUtilization();
         }
-        System.out.println("pass");
         analysis.maxLinkLoadLowerBound = mcfLoad;
     }
 

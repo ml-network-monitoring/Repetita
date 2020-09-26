@@ -59,24 +59,34 @@ public class FlowSimulator {
      * for the setting provided in input through the setup method.
      */
     public void computeFlows(){
+        System.out.println("pass");
         Set<String> simulatedDemands = new HashSet<>();
+        System.out.println("pass");
         this.flow = new double[this.setting.getTopology().nEdges];
+        System.out.println("pass");
         this.nextHops = new StringBuffer();
+        System.out.println("pass");
         int priority = 1;
 
         // simulate the different parts of the configuration using the specialized simulators one by one
+        System.out.println("pass");
         for (SpecializedFlowSimulator sim: this.simulators){
             // compute flows
+            System.out.println("pass inside for");
             sim.setup(this.setting, simulatedDemands);
+            System.out.println("pass inside for");
             Collection<String> justSimulated = sim.computeFlows();
+            System.out.println("pass inside for");
             simulatedDemands.addAll(justSimulated);
 
             // update maxLinkLoad on each edge
+            System.out.println("pass inside for");
             for(int e = 0; e < this.flow.length; e++){
                 this.flow[e] += sim.getFlow()[e];
             }
 
             // update next-hop string
+            System.out.println("pass inside for");
             this.nextHops.append("\n***Next hops priority " + priority + " (" + sim.name() + " paths)***\n" + sim.getNextHops());
             priority++;
         }
