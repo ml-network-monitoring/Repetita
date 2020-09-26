@@ -26,6 +26,12 @@ public class MultiStepSolverRun extends Scenario {
 
     @Override
     public void run(long timeMillis) {
+        // BEGIN: Thanh-san code
+        // extract useful information from setting like topo and demandchanges
+        List<Demands> demandsList = this.setting.getDemandChanges();
+        Topology topology = this.setting.getTopology().clone();
+        // END: Thanh-san code
+
         // perform pre-optimization analyses
         Analysis preOpt = analyzer.analyze(this.setting);
         preOpt.setId("pre-optimization");
@@ -51,10 +57,7 @@ public class MultiStepSolverRun extends Scenario {
 
         // BEGIN: Thanh-san code
         // extract useful information from setting like topo and demandchanges
-        List<Demands> demandsList = this.setting.getDemandChanges();
-        Topology topology = this.setting.getTopology();
         int nIterations = demandsList.size();
-
         System.out.println("nIterations: " + nIterations);
 
         // extract previous routing configuration
@@ -71,6 +74,8 @@ public class MultiStepSolverRun extends Scenario {
             // DEBUG: print the demands to check
             System.out.println(Arrays.toString(currentDemands.amount));
             // create a new (minimalistic) setting and analyze it
+            topology = this.setting.getTopology().clone();
+            currentSetting.setTopology(topology);
             currentSetting.setDemands(currentDemands);
             System.out.println("before analyses");
             this.analyses.put("Iteration " + Integer.toString(iteration), analyzer.analyze(currentSetting));
