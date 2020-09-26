@@ -1,8 +1,9 @@
 import util
 import re
 
+N_dict = {'abilene_tm': 12, 'geant_tm': 30, 'brain_tm': 9}
+
 def parse_routing(t, args):
-    N_dict = {'abilene_tm': 12, 'geant_tm': 30, 'brain_tm': 9}
     N = N_dict[args.dataset]
     routing = [[[] for i in range(N)] for j in range(N)]
     routing_txt = open('../result/{}/routing.{}.txt'.format(args.dataset, t)).read()
@@ -23,6 +24,16 @@ def parse_routing(t, args):
             break
     return routing
 
+def get_rc(prev_routing, routing, args):
+    N = N_dict[args.dataset]
+    rc = 0
+    for i in range(N):
+        for j in range(N):
+            if prev_routing[i][j] != routing[i][j]:
+                rc += 1
+    return rc
+
+
 def parse_result(t, stdout, args):
     mlus = []
     rc = None
@@ -31,9 +42,9 @@ def parse_result(t, stdout, args):
     mlus = [float(mlu) for mlu in mlus]
     # parse rc
     if t >= args.T + 1:
-        prev_routing = open('../result/{}/routing.{}.txt'.format(args.dataset, t)).read()
-        routing      = open('../result/{}/routing.{}.txt'.format(args.dataset, t)).read()
-        print(prev_routing)
+        prev_routing = parse_routing(t - args.T - 1, args)
+        routing = parse_routing(t, args)
+        rc = get_rc(prev_routing, routing, args)
     return mlus, rc
 
 def main():
@@ -48,10 +59,8 @@ def main():
         if t % (args.T + 1) == 0:
             repetita_args = util.get_repetita_args(args, t)
             stdout = util.call(repetita_args)
-            print(stdout)
-            parse_result(t, stdout, args)
-            if t > args.T + 1:
-                break
+            mlus, rc = parse_result(t, stdout, args)
+            print(mlus, rc)
 
 
 if __name__ == '__main__':
