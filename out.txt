@@ -3,14 +3,47 @@
 
 ***Next hops priority 2 (sr paths)***
 
+Destination 1_ATLAng
+sequence of middlepoints: 0_ATLAM5 -> 1_ATLAng
+
+Destination 2_CHINng
+sequence of middlepoints: 0_ATLAM5 -> 2_CHINng
+
+Destination 3_DNVRng
+sequence of middlepoints: 0_ATLAM5 -> 3_DNVRng
+
 Destination 4_HSTNng
 sequence of middlepoints: 0_ATLAM5 -> 4_HSTNng
+
+Destination 5_IPLSng
+sequence of middlepoints: 0_ATLAM5 -> 5_IPLSng
+
+Destination 6_KSCYng
+sequence of middlepoints: 0_ATLAM5 -> 6_KSCYng
+
+Destination 7_LOSAng
+sequence of middlepoints: 0_ATLAM5 -> 7_LOSAng
+
+Destination 8_NYCMng
+sequence of middlepoints: 0_ATLAM5 -> 8_NYCMng
+
+Destination 9_SNVAng
+sequence of middlepoints: 0_ATLAM5 -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 0_ATLAM5 -> 10_STTLng
 
 Destination 11_WASHng
 sequence of middlepoints: 0_ATLAM5 -> 11_WASHng
 
+Destination 0_ATLAM5
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5
+
 Destination 2_CHINng
 sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 2_CHINng
+
+Destination 3_DNVRng
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 3_DNVRng
 
 Destination 4_HSTNng
 sequence of middlepoints: 1_ATLAng -> 11_WASHng -> 4_HSTNng
@@ -21,11 +54,23 @@ sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 5_IPLSng
 Destination 6_KSCYng
 sequence of middlepoints: 1_ATLAng -> 4_HSTNng -> 6_KSCYng
 
+Destination 7_LOSAng
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 7_LOSAng
+
 Destination 8_NYCMng
 sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 8_NYCMng
 
+Destination 9_SNVAng
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 10_STTLng
+
 Destination 11_WASHng
 sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 2_CHINng -> 1_ATLAng -> 0_ATLAM5
 
 Destination 1_ATLAng
 sequence of middlepoints: 2_CHINng -> 11_WASHng -> 1_ATLAng
@@ -48,8 +93,17 @@ sequence of middlepoints: 2_CHINng -> 3_DNVRng -> 7_LOSAng
 Destination 8_NYCMng
 sequence of middlepoints: 2_CHINng -> 8_NYCMng
 
+Destination 9_SNVAng
+sequence of middlepoints: 2_CHINng -> 0_ATLAM5 -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 2_CHINng -> 0_ATLAM5 -> 10_STTLng
+
 Destination 11_WASHng
 sequence of middlepoints: 2_CHINng -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 3_DNVRng -> 1_ATLAng -> 0_ATLAM5
 
 Destination 1_ATLAng
 sequence of middlepoints: 3_DNVRng -> 0_ATLAM5 -> 1_ATLAng
@@ -66,6 +120,9 @@ sequence of middlepoints: 3_DNVRng -> 11_WASHng -> 5_IPLSng
 Destination 6_KSCYng
 sequence of middlepoints: 3_DNVRng -> 9_SNVAng -> 6_KSCYng
 
+Destination 7_LOSAng
+sequence of middlepoints: 3_DNVRng -> 0_ATLAM5 -> 7_LOSAng
+
 Destination 8_NYCMng
 sequence of middlepoints: 3_DNVRng -> 0_ATLAM5 -> 8_NYCMng
 
@@ -78,17 +135,41 @@ sequence of middlepoints: 3_DNVRng -> 9_SNVAng -> 10_STTLng
 Destination 11_WASHng
 sequence of middlepoints: 3_DNVRng -> 0_ATLAM5 -> 11_WASHng
 
+Destination 0_ATLAM5
+sequence of middlepoints: 4_HSTNng -> 1_ATLAng -> 0_ATLAM5
+
 Destination 1_ATLAng
 sequence of middlepoints: 4_HSTNng -> 11_WASHng -> 1_ATLAng
 
 Destination 2_CHINng
 sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 2_CHINng
 
+Destination 3_DNVRng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 3_DNVRng
+
+Destination 5_IPLSng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 5_IPLSng
+
+Destination 6_KSCYng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 6_KSCYng
+
+Destination 7_LOSAng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 7_LOSAng
+
 Destination 8_NYCMng
 sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 8_NYCMng
 
+Destination 9_SNVAng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 10_STTLng
+
 Destination 11_WASHng
 sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 5_IPLSng -> 1_ATLAng -> 0_ATLAM5
 
 Destination 1_ATLAng
 sequence of middlepoints: 5_IPLSng -> 11_WASHng -> 1_ATLAng
@@ -120,6 +201,9 @@ sequence of middlepoints: 5_IPLSng -> 0_ATLAM5 -> 10_STTLng
 Destination 11_WASHng
 sequence of middlepoints: 5_IPLSng -> 0_ATLAM5 -> 11_WASHng
 
+Destination 0_ATLAM5
+sequence of middlepoints: 6_KSCYng -> 1_ATLAng -> 0_ATLAM5
+
 Destination 1_ATLAng
 sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 1_ATLAng
 
@@ -135,11 +219,23 @@ sequence of middlepoints: 6_KSCYng -> 11_WASHng -> 4_HSTNng
 Destination 5_IPLSng
 sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 5_IPLSng
 
+Destination 7_LOSAng
+sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 7_LOSAng
+
 Destination 8_NYCMng
 sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 8_NYCMng
 
+Destination 9_SNVAng
+sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 10_STTLng
+
 Destination 11_WASHng
 sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 7_LOSAng -> 1_ATLAng -> 0_ATLAM5
 
 Destination 1_ATLAng
 sequence of middlepoints: 7_LOSAng -> 0_ATLAM5 -> 1_ATLAng
@@ -171,6 +267,9 @@ sequence of middlepoints: 7_LOSAng -> 3_DNVRng -> 10_STTLng
 Destination 11_WASHng
 sequence of middlepoints: 7_LOSAng -> 0_ATLAM5 -> 11_WASHng
 
+Destination 0_ATLAM5
+sequence of middlepoints: 8_NYCMng -> 1_ATLAng -> 0_ATLAM5
+
 Destination 1_ATLAng
 sequence of middlepoints: 8_NYCMng -> 11_WASHng -> 1_ATLAng
 
@@ -192,20 +291,35 @@ sequence of middlepoints: 8_NYCMng -> 4_HSTNng -> 6_KSCYng
 Destination 7_LOSAng
 sequence of middlepoints: 8_NYCMng -> 7_LOSAng
 
+Destination 9_SNVAng
+sequence of middlepoints: 8_NYCMng -> 0_ATLAM5 -> 9_SNVAng
+
 Destination 10_STTLng
 sequence of middlepoints: 8_NYCMng -> 4_HSTNng -> 10_STTLng
 
 Destination 11_WASHng
 sequence of middlepoints: 8_NYCMng -> 2_CHINng -> 11_WASHng
 
+Destination 0_ATLAM5
+sequence of middlepoints: 9_SNVAng -> 1_ATLAng -> 0_ATLAM5
+
 Destination 1_ATLAng
 sequence of middlepoints: 9_SNVAng -> 0_ATLAM5 -> 1_ATLAng
+
+Destination 2_CHINng
+sequence of middlepoints: 9_SNVAng -> 0_ATLAM5 -> 2_CHINng
 
 Destination 3_DNVRng
 sequence of middlepoints: 9_SNVAng -> 10_STTLng -> 3_DNVRng
 
 Destination 4_HSTNng
 sequence of middlepoints: 9_SNVAng -> 3_DNVRng -> 4_HSTNng
+
+Destination 5_IPLSng
+sequence of middlepoints: 9_SNVAng -> 0_ATLAM5 -> 5_IPLSng
+
+Destination 6_KSCYng
+sequence of middlepoints: 9_SNVAng -> 0_ATLAM5 -> 6_KSCYng
 
 Destination 7_LOSAng
 sequence of middlepoints: 9_SNVAng -> 6_KSCYng -> 7_LOSAng
@@ -219,6 +333,9 @@ sequence of middlepoints: 9_SNVAng -> 3_DNVRng -> 10_STTLng
 Destination 11_WASHng
 sequence of middlepoints: 9_SNVAng -> 0_ATLAM5 -> 11_WASHng
 
+Destination 0_ATLAM5
+sequence of middlepoints: 10_STTLng -> 1_ATLAng -> 0_ATLAM5
+
 Destination 1_ATLAng
 sequence of middlepoints: 10_STTLng -> 0_ATLAM5 -> 1_ATLAng
 
@@ -230,6 +347,9 @@ sequence of middlepoints: 10_STTLng -> 3_DNVRng
 
 Destination 4_HSTNng
 sequence of middlepoints: 10_STTLng -> 3_DNVRng -> 4_HSTNng
+
+Destination 5_IPLSng
+sequence of middlepoints: 10_STTLng -> 0_ATLAM5 -> 5_IPLSng
 
 Destination 6_KSCYng
 sequence of middlepoints: 10_STTLng -> 7_LOSAng -> 6_KSCYng
@@ -245,6 +365,9 @@ sequence of middlepoints: 10_STTLng -> 0_ATLAM5 -> 9_SNVAng
 
 Destination 11_WASHng
 sequence of middlepoints: 10_STTLng -> 3_DNVRng -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 11_WASHng -> 1_ATLAng -> 0_ATLAM5
 
 Destination 1_ATLAng
 sequence of middlepoints: 11_WASHng -> 0_ATLAM5 -> 1_ATLAng
@@ -264,8 +387,14 @@ sequence of middlepoints: 11_WASHng -> 1_ATLAng -> 5_IPLSng
 Destination 6_KSCYng
 sequence of middlepoints: 11_WASHng -> 4_HSTNng -> 6_KSCYng
 
+Destination 7_LOSAng
+sequence of middlepoints: 11_WASHng -> 0_ATLAM5 -> 7_LOSAng
+
 Destination 8_NYCMng
 sequence of middlepoints: 11_WASHng -> 8_NYCMng
+
+Destination 9_SNVAng
+sequence of middlepoints: 11_WASHng -> 0_ATLAM5 -> 9_SNVAng
 
 Destination 10_STTLng
 sequence of middlepoints: 11_WASHng -> 4_HSTNng -> 10_STTLng

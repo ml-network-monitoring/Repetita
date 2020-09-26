@@ -75,14 +75,12 @@ public class MultiStepSolverRun extends Scenario {
             System.out.println(Arrays.toString(currentDemands.amount));
             // create a new (minimalistic) setting and analyze it
             currentSetting.setDemands(currentDemands);
-            System.out.println("before analyses");
             this.analyses.put("Iteration " + Integer.toString(iteration), analyzer.analyze(currentSetting));
-            System.out.println("after analyses");
         }
 
         // print results
         for (int it = 0; it < nIterations; it++) {
-            this.print("\ndemand change " + it);
+            this.print("demand change " + it);
             this.analyses.get("Iteration " + Integer.toString(it)).printTrafficSummary();
         }
         // END: Thanh-san code

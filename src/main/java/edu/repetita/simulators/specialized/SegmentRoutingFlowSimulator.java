@@ -48,10 +48,8 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
         }
 
         // compute the new traffic matrix, splitting demand so as to match SR paths
-        System.out.println("number of demands: " + demands.nDemands);
         if(paths != null) {
             for (int demand = 0; demand < demands.nDemands; demand++) {
-                System.out.println("begin demand#" + demand);
                 // if the demand has to be ignored, do nothing
                 if(this.demandsToIgnore.contains(demands.label[demand])){
                     continue;
@@ -61,27 +59,18 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
                 double amount = demands.amount[demand];
                 currNextHops.append("\nDestination " + topology.nodeLabel[demands.dest[demand]] + "\nsequence of middlepoints: ");
                 if (paths.getPath(demand) != null) {
-                    System.out.println("paths.nDemands: " + paths.nDemands);
                     int positions = paths.getPathLength(demand) - 1;
-                    System.out.println("positions: " + positions);
                     for (int position = 0; position < positions; position++) {
-                        System.out.println("position #" + position);
                         int subSrc = paths.getPathElement(demand, position);
-                        System.out.println("pass");
                         int subDest = paths.getPathElement(demand, position + 1);
-                        System.out.println("pass");
                         traffic[subSrc][subDest] += amount;
-                        System.out.println("pass");
                         currNextHops.append(topology.nodeLabel[subSrc] + " -> ");
-                        System.out.println("pass");
                         if (position == positions - 1){
                             currNextHops.append(topology.nodeLabel[demands.dest[demand]] + "\n");
                         }
-                        System.out.println("pass");
                     }
                     simulatedDemands.add(demands.label[demand]);
                 }
-                System.out.println("end demand#" + demand);
             }
         }
 
