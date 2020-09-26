@@ -59,16 +59,17 @@ public class MultiStepSolverRun extends Scenario {
         // extract previous routing configuration
         RoutingConfiguration lastConfig = setting.getRoutingConfiguration();
 
+        // initialize a setting
+        Setting currentSetting = new Setting();
+        currentSetting.setTopology(topology);
+        currentSetting.setRoutingConfiguration(lastConfig);
+        Demands currentDemands;
         for (int iteration = 0; iteration < nIterations; iteration++) {
             // extract the new demand from demandsList
-            Demands currentDemands = demandsList.get(iteration % demandsList.size());
+            currentDemands = demandsList.get(iteration);
             // create a new (minimalistic) setting and analyze it
-            Setting currentSetting = new Setting();
-            currentSetting.setTopology(topology);
             currentSetting.setDemands(currentDemands);
-            currentSetting.setRoutingConfiguration(lastConfig);
             System.out.println("before analyses");
-            System.out.println("currentDemands "+ currentDemands);
             this.analyses.put("Iteration " + Integer.toString(iteration), analyzer.analyze(currentSetting));
             System.out.println("after analyses");
         }
