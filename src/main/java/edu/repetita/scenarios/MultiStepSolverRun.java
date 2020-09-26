@@ -60,7 +60,6 @@ public class MultiStepSolverRun extends Scenario {
         RoutingConfiguration lastConfig = setting.getRoutingConfiguration();
 
         for (int iteration = 0; iteration < nIterations; iteration++) {
-
             // extract the new demand from demandsList
             Demands currentDemands = demandsList.get(iteration % demandsList.size());
             // create a new (minimalistic) setting and analyze it
@@ -68,15 +67,15 @@ public class MultiStepSolverRun extends Scenario {
             currentSetting.setTopology(topology);
             currentSetting.setDemands(currentDemands);
             currentSetting.setRoutingConfiguration(lastConfig);
-            this.analyses.put("Iteration " + Integer.toString(iteration), analyzer.analyze(currentSetting,"pre-optimization"));
-
-            System.out.println(postOpt.maxLinkLoad);
+            System.out.println("before analyses");
+            this.analyses.put("Iteration " + Integer.toString(iteration), analyzer.analyze(currentSetting));
+            System.out.println("after analyses");
         }
 
         // print results
         for (int it = 0; it < nIterations; it++) {
             this.print("\ndemand change " + it);
-            this.analyses.get("Iteration " + it + " pre-optimization").printTrafficSummary();
+            this.analyses.get("Iteration " + Integer.toString(it)).printTrafficSummary();
         }
         // END: Thanh-san code
 
