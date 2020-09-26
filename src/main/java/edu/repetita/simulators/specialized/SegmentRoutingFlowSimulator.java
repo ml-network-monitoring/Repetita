@@ -61,7 +61,7 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
                 double amount = demands.amount[demand];
                 currNextHops.append("\nDestination " + topology.nodeLabel[demands.dest[demand]] + "\nsequence of middlepoints: ");
                 if (paths.getPath(demand) != null) {
-                    System.out.println("path.nDemands: " + path.nDemands);
+                    System.out.println("paths.nDemands: " + paths.nDemands);
                     int positions = paths.getPathLength(demand) - 1;
                     System.out.println("positions: " + positions);
                     for (int position = 0; position < positions; position++) {
