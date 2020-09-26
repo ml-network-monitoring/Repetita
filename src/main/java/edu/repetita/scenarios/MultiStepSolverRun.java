@@ -68,6 +68,7 @@ public class MultiStepSolverRun extends Scenario {
             currentSetting.setDemands(currentDemands);
             currentSetting.setRoutingConfiguration(lastConfig);
             System.out.println("before analyses");
+            System.out.println("currentDemands "+ currentDemands);
             this.analyses.put("Iteration " + Integer.toString(iteration), analyzer.analyze(currentSetting));
             System.out.println("after analyses");
         }

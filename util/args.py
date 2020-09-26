@@ -17,7 +17,7 @@ def get_args():
 
     # parameter for scenario
     parser.add_argument('--scenario', type=str, default='MultiStepSolverRun',
-                        choices=['MultiStepSolverRun'])
+                        choices=['MultiStepSolverRun', 'DemandChangeReoptimization'])
     # get args
     args = parser.parse_args()
 
