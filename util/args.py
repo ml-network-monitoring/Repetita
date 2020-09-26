@@ -13,7 +13,7 @@ def get_args():
 
     # parameter for solver
     parser.add_argument('--solver', type=str, default='MIPTwoSRNoSplit',
-                        choices=['MIPTwoSRNoSplit'])
+                        choices=['MIPTwoSRNoSplit', 'SRLS'])
 
     # parameter for scenario
     parser.add_argument('--scenario', type=str, default='MultiStepSolverRun',
