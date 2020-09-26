@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class SRPaths {
     Demands demands;
-    int nDemands;
+    public int nDemands;
     int[] lengths;
     int[][] paths;
 
