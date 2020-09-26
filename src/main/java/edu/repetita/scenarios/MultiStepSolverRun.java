@@ -68,6 +68,7 @@ public class MultiStepSolverRun extends Scenario {
         for (int iteration = 0; iteration < nIterations; iteration++) {
             // extract the new demand from demandsList
             currentDemands = demandsList.get(iteration);
+            // DEBUG: print the demands to check
             System.out.println(Arrays.toString(currentDemands.amount));
             // create a new (minimalistic) setting and analyze it
             currentSetting.setDemands(currentDemands);

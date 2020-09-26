@@ -37,9 +37,11 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
         Set<String> simulatedDemands = new HashSet<>();
 
         // get SR paths from setting
+        System.out.println("get SR paths from setting");
         SRPaths paths = this.setting.getSRPaths();
 
         // re-initialize traffic matrix
+        System.out.println("re-initialize traffic matrix");
         double[][] traffic = new double[nNodes][nNodes];
         for (int source = 0; source < nNodes; source++) {
             for (int dest = 0; dest < nNodes; dest++) {
@@ -48,14 +50,18 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
         }
 
         // compute the new traffic matrix, splitting demand so as to match SR paths
+        System.out.println("compute the new traffic matrix, splitting demand so as to match SR paths");
         if(paths != null) {
             for (int demand = 0; demand < demands.nDemands; demand++) {
+                System.out.println("demand #" + demand);
                 // if the demand has to be ignored, do nothing
+                System.out.println("if the demand has to be ignored, do nothing");
                 if(this.demandsToIgnore.contains(demands.label[demand])){
                     continue;
                 }
 
                 // if there is an SR path, split the demand in sub-demands
+                System.out.println("if there is an SR path, split the demand in sub-demands");
                 double amount = demands.amount[demand];
                 currNextHops.append("\nDestination " + topology.nodeLabel[demands.dest[demand]] + "\nsequence of middlepoints: ");
                 if (paths.getPath(demand) != null) {
