@@ -54,7 +54,6 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
                 System.out.println("begin demand#" + demand);
                 // if the demand has to be ignored, do nothing
                 if(this.demandsToIgnore.contains(demands.label[demand])){
-                    System.out.println("line 57");
                     continue;
                 }
 
@@ -64,16 +63,20 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
                 currNextHops.append("\nDestination " + topology.nodeLabel[demands.dest[demand]] + "\nsequence of middlepoints: ");
                 if (paths.getPath(demand) != null) {
                     int positions = paths.getPathLength(demand) - 1;
+                    System.out.println("positions: " + positions);
                     for (int position = 0; position < positions; position++) {
+                        System.out.println("position #" + position);
                         int subSrc = paths.getPathElement(demand, position);
                         int subDest = paths.getPathElement(demand, position + 1);
                         traffic[subSrc][subDest] += amount;
+                        System.out.println("traffic[" + subSrc + "][" + subDest + "] = " + amount)
                         currNextHops.append(topology.nodeLabel[subSrc] + " -> ");
                         if (position == positions - 1){
                             currNextHops.append(topology.nodeLabel[demands.dest[demand]] + "\n");
                         }
+                        System.out.println("currNextHops.append");
                     }
-                    System.out.println("line 75");
+                    System.out.println("pass");
                     simulatedDemands.add(demands.label[demand]);
                 }
                 System.out.println("end demand#" + demand);
