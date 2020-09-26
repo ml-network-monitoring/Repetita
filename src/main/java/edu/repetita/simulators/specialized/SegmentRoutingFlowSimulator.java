@@ -48,18 +48,19 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
         }
 
         // compute the new traffic matrix, splitting demand so as to match SR paths
-        System.out.println("compute the new traffic matrix, splitting demand so as to match SR paths");
         System.out.println("number of demands: " + demands.nDemands);
         if(paths != null) {
             for (int demand = 0; demand < demands.nDemands; demand++) {
                 System.out.println("begin demand#" + demand);
                 // if the demand has to be ignored, do nothing
                 if(this.demandsToIgnore.contains(demands.label[demand])){
+                    System.out.println("line 57");
                     continue;
                 }
 
                 // if there is an SR path, split the demand in sub-demands
                 double amount = demands.amount[demand];
+                System.out.println("demands.amount[" + demand + "] = " + amount);
                 currNextHops.append("\nDestination " + topology.nodeLabel[demands.dest[demand]] + "\nsequence of middlepoints: ");
                 if (paths.getPath(demand) != null) {
                     int positions = paths.getPathLength(demand) - 1;
@@ -72,23 +73,19 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
                             currNextHops.append(topology.nodeLabel[demands.dest[demand]] + "\n");
                         }
                     }
+                    System.out.println("line 75");
                     simulatedDemands.add(demands.label[demand]);
                 }
                 System.out.println("end demand#" + demand);
             }
         }
-        else {
-            System.out.println("paths is null");
-        }
 
         // compute ECMP paths for the traffic matrix reflecting SR paths
-        System.out.println("compute ECMP paths for the traffic matrix reflecting SR paths");
         this.flow = ecmp.computeTrafficDistribution(topology, traffic);
 
         // store the current SR paths
         this.nextHops = currNextHops.toString();
 
-        System.out.println("return simulatedDemands");
         return simulatedDemands;
     }
 
