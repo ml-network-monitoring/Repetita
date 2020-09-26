@@ -53,9 +53,7 @@ public class Analyzer {
 
         // lets the specialized analyzers fill the analysis
         for (SpecializedAnalyzer sa: this.specializedAnalyzers){
-            System.out.println(sa.getDescription());
             sa.analyze(setting, result);
-            System.out.println(sa.getDescription());
         }
 
         return result;
