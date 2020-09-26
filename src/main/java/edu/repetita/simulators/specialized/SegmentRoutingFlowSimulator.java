@@ -59,7 +59,6 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
 
                 // if there is an SR path, split the demand in sub-demands
                 double amount = demands.amount[demand];
-                System.out.println("demands.amount[" + demand + "] = " + amount);
                 currNextHops.append("\nDestination " + topology.nodeLabel[demands.dest[demand]] + "\nsequence of middlepoints: ");
                 if (paths.getPath(demand) != null) {
                     int positions = paths.getPathLength(demand) - 1;
@@ -67,16 +66,18 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
                     for (int position = 0; position < positions; position++) {
                         System.out.println("position #" + position);
                         int subSrc = paths.getPathElement(demand, position);
+                        System.out.println("pass");
                         int subDest = paths.getPathElement(demand, position + 1);
+                        System.out.println("pass");
                         traffic[subSrc][subDest] += amount;
-                        System.out.println("traffic[" + subSrc + "][" + subDest + "] = " + amount);
+                        System.out.println("pass");
                         currNextHops.append(topology.nodeLabel[subSrc] + " -> ");
+                        System.out.println("pass");
                         if (position == positions - 1){
                             currNextHops.append(topology.nodeLabel[demands.dest[demand]] + "\n");
                         }
-                        System.out.println("currNextHops.append");
+                        System.out.println("pass");
                     }
-                    System.out.println("pass");
                     simulatedDemands.add(demands.label[demand]);
                 }
                 System.out.println("end demand#" + demand);

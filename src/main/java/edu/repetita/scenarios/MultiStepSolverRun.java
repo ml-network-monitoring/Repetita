@@ -74,8 +74,6 @@ public class MultiStepSolverRun extends Scenario {
             // DEBUG: print the demands to check
             System.out.println(Arrays.toString(currentDemands.amount));
             // create a new (minimalistic) setting and analyze it
-            topology = this.setting.getTopology().clone();
-            currentSetting.setTopology(topology);
             currentSetting.setDemands(currentDemands);
             System.out.println("before analyses");
             this.analyses.put("Iteration " + Integer.toString(iteration), analyzer.analyze(currentSetting));
