@@ -23,7 +23,6 @@ public class OverheadSpecializedAnalyzer implements SpecializedAnalyzer {
         analysis.totEdges = setting.getTopology().nEdges;
         analysis.totDemands = setting.getDemands().nDemands;
 
-        System.out.println("here");
         Map<Integer,int[]> srPaths = new HashMap<>();
         if (setting.getSRPaths() != null){
             srPaths = setting.getSRPaths().getPathsWithIntermediateSegments();
@@ -39,6 +38,7 @@ public class OverheadSpecializedAnalyzer implements SpecializedAnalyzer {
         int[] edgeWeights = setting.getTopology().edgeWeight;
         analysis.igpWeights = new int[edgeWeights.length];
         System.arraycopy(edgeWeights,0,analysis.igpWeights,0, edgeWeights.length);
+        System.out.println("here");
     }
 
     @Override
