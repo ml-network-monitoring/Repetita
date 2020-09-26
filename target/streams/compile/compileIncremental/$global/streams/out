@@ -18,7 +18,7 @@
 [0m[[0minfo[0m] [0mCompiling 99 Scala sources and 57 Java sources to /home/thanh/code/target/scala-2.11/classes...[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.15:component from component compiler for Scala 2.11.4[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.15:component from component compiler for Scala 2.11.4[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 262d36ab, interfacing (CompilerInterface) with Scala compiler version 2.11.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 3372ad57, interfacing (CompilerInterface) with Scala compiler version 2.11.4[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/thanh/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.4.jar[0m
@@ -27,13 +27,13 @@
 [0m[[33mwarn[0m] [0mthere were 7 deprecation warnings; re-run with -deprecation for details[0m
 [0m[[33mwarn[0m] [0mthere were 10 feature warnings; re-run with -feature for details[0m
 [0m[[33mwarn[0m] [0mtwo warnings found[0m
-[0m[[0mdebug[0m] [0mScala compilation took 10.212365131 s[0m
-[0m[[0mdebug[0m] [0mAttempting to call com.sun.tools.javac.api.JavacTool@6fd81c72 directly...[0m
+[0m[[0mdebug[0m] [0mScala compilation took 10.80667662 s[0m
+[0m[[0mdebug[0m] [0mAttempting to call com.sun.tools.javac.api.JavacTool@428b1fa2 directly...[0m
 [0m[[0minfo[0m] [0m/home/thanh/code/src/main/java/edu/repetita/analyses/Analyzer.java: Some input files use unchecked or unsafe operations.[0m
 [0m[[0minfo[0m] [0m/home/thanh/code/src/main/java/edu/repetita/analyses/Analyzer.java: Recompile with -Xlint:unchecked for details.[0m
-[0m[[0mdebug[0m] [0mJava compilation took 0.92604378 s[0m
-[0m[[0mdebug[0m] [0mJava analysis took 0.185766896 s[0m
-[0m[[0mdebug[0m] [0mJava compile + analysis took 1.118748236 s[0m
+[0m[[0mdebug[0m] [0mJava compilation took 0.878927257 s[0m
+[0m[[0mdebug[0m] [0mJava analysis took 0.220844611 s[0m
+[0m[[0mdebug[0m] [0mJava compile + analysis took 1.107719765 s[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidating /home/thanh/code/src/main/java/edu/repetita/scenarios/SingleLinkFailureRobustness.java...[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /home/thanh/code/src/main/java/edu/repetita/scenarios/SingleLinkFailureRobustness.java...[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/thanh/code/src/main/java/edu/repetita/scenarios/SingleLinkFailureRobustness.java)[0m
