@@ -7,7 +7,7 @@
 		revision="0.1-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20200926142215"/>
+		date="20200926143359"/>
 	<dependencies>
 		<module organisation="net.sf.jung" name="jung-visualization">
 			<revision name="2.1.1" status="release" pubdate="20160907235617" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="38">
