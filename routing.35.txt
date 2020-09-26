@@ -1,0 +1,571 @@
+
+***Next hops priority 1 (explicit paths)***
+
+***Next hops priority 2 (sr paths)***
+
+Destination 1_ATLAng
+sequence of middlepoints: 0_ATLAM5 -> 1_ATLAng
+
+Destination 2_CHINng
+sequence of middlepoints: 0_ATLAM5 -> 2_CHINng
+
+Destination 3_DNVRng
+sequence of middlepoints: 0_ATLAM5 -> 3_DNVRng
+
+Destination 4_HSTNng
+sequence of middlepoints: 0_ATLAM5 -> 11_WASHng -> 4_HSTNng
+
+Destination 5_IPLSng
+sequence of middlepoints: 0_ATLAM5 -> 5_IPLSng
+
+Destination 6_KSCYng
+sequence of middlepoints: 0_ATLAM5 -> 6_KSCYng
+
+Destination 7_LOSAng
+sequence of middlepoints: 0_ATLAM5 -> 7_LOSAng
+
+Destination 8_NYCMng
+sequence of middlepoints: 0_ATLAM5 -> 8_NYCMng
+
+Destination 9_SNVAng
+sequence of middlepoints: 0_ATLAM5 -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 0_ATLAM5 -> 10_STTLng
+
+Destination 11_WASHng
+sequence of middlepoints: 0_ATLAM5 -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5
+
+Destination 2_CHINng
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 2_CHINng
+
+Destination 3_DNVRng
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 3_DNVRng
+
+Destination 4_HSTNng
+sequence of middlepoints: 1_ATLAng -> 7_LOSAng -> 4_HSTNng
+
+Destination 5_IPLSng
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 5_IPLSng
+
+Destination 6_KSCYng
+sequence of middlepoints: 1_ATLAng -> 7_LOSAng -> 6_KSCYng
+
+Destination 7_LOSAng
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 7_LOSAng
+
+Destination 8_NYCMng
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 8_NYCMng
+
+Destination 9_SNVAng
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 10_STTLng
+
+Destination 11_WASHng
+sequence of middlepoints: 1_ATLAng -> 0_ATLAM5 -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 2_CHINng -> 1_ATLAng -> 0_ATLAM5
+
+Destination 1_ATLAng
+sequence of middlepoints: 2_CHINng -> 11_WASHng -> 1_ATLAng
+
+Destination 3_DNVRng
+sequence of middlepoints: 2_CHINng -> 7_LOSAng -> 3_DNVRng
+
+Destination 4_HSTNng
+sequence of middlepoints: 2_CHINng -> 11_WASHng -> 4_HSTNng
+
+Destination 5_IPLSng
+sequence of middlepoints: 2_CHINng -> 11_WASHng -> 5_IPLSng
+
+Destination 6_KSCYng
+sequence of middlepoints: 2_CHINng -> 11_WASHng -> 6_KSCYng
+
+Destination 7_LOSAng
+sequence of middlepoints: 2_CHINng -> 10_STTLng -> 7_LOSAng
+
+Destination 8_NYCMng
+sequence of middlepoints: 2_CHINng -> 11_WASHng -> 8_NYCMng
+
+Destination 9_SNVAng
+sequence of middlepoints: 2_CHINng -> 0_ATLAM5 -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 2_CHINng -> 0_ATLAM5 -> 10_STTLng
+
+Destination 11_WASHng
+sequence of middlepoints: 2_CHINng -> 8_NYCMng -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 3_DNVRng -> 1_ATLAng -> 0_ATLAM5
+
+Destination 1_ATLAng
+sequence of middlepoints: 3_DNVRng -> 0_ATLAM5 -> 1_ATLAng
+
+Destination 2_CHINng
+sequence of middlepoints: 3_DNVRng -> 1_ATLAng -> 2_CHINng
+
+Destination 4_HSTNng
+sequence of middlepoints: 3_DNVRng -> 6_KSCYng -> 4_HSTNng
+
+Destination 5_IPLSng
+sequence of middlepoints: 3_DNVRng -> 0_ATLAM5 -> 5_IPLSng
+
+Destination 6_KSCYng
+sequence of middlepoints: 3_DNVRng -> 9_SNVAng -> 6_KSCYng
+
+Destination 7_LOSAng
+sequence of middlepoints: 3_DNVRng -> 0_ATLAM5 -> 7_LOSAng
+
+Destination 8_NYCMng
+sequence of middlepoints: 3_DNVRng -> 0_ATLAM5 -> 8_NYCMng
+
+Destination 9_SNVAng
+sequence of middlepoints: 3_DNVRng -> 7_LOSAng -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 3_DNVRng -> 0_ATLAM5 -> 10_STTLng
+
+Destination 11_WASHng
+sequence of middlepoints: 3_DNVRng -> 0_ATLAM5 -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 4_HSTNng -> 1_ATLAng -> 0_ATLAM5
+
+Destination 1_ATLAng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 1_ATLAng
+
+Destination 2_CHINng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 2_CHINng
+
+Destination 3_DNVRng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 3_DNVRng
+
+Destination 5_IPLSng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 5_IPLSng
+
+Destination 6_KSCYng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 6_KSCYng
+
+Destination 7_LOSAng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 7_LOSAng
+
+Destination 8_NYCMng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 8_NYCMng
+
+Destination 9_SNVAng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 4_HSTNng -> 0_ATLAM5 -> 10_STTLng
+
+Destination 11_WASHng
+sequence of middlepoints: 4_HSTNng -> 7_LOSAng -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 5_IPLSng -> 1_ATLAng -> 0_ATLAM5
+
+Destination 1_ATLAng
+sequence of middlepoints: 5_IPLSng -> 0_ATLAM5 -> 1_ATLAng
+
+Destination 2_CHINng
+sequence of middlepoints: 5_IPLSng -> 8_NYCMng -> 2_CHINng
+
+Destination 3_DNVRng
+sequence of middlepoints: 5_IPLSng -> 1_ATLAng -> 3_DNVRng
+
+Destination 4_HSTNng
+sequence of middlepoints: 5_IPLSng -> 1_ATLAng -> 4_HSTNng
+
+Destination 6_KSCYng
+sequence of middlepoints: 5_IPLSng -> 7_LOSAng -> 6_KSCYng
+
+Destination 7_LOSAng
+sequence of middlepoints: 5_IPLSng -> 0_ATLAM5 -> 7_LOSAng
+
+Destination 8_NYCMng
+sequence of middlepoints: 5_IPLSng -> 8_NYCMng
+
+Destination 9_SNVAng
+sequence of middlepoints: 5_IPLSng -> 0_ATLAM5 -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 5_IPLSng -> 0_ATLAM5 -> 10_STTLng
+
+Destination 11_WASHng
+sequence of middlepoints: 5_IPLSng -> 8_NYCMng -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 6_KSCYng -> 1_ATLAng -> 0_ATLAM5
+
+Destination 1_ATLAng
+sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 1_ATLAng
+
+Destination 2_CHINng
+sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 2_CHINng
+
+Destination 3_DNVRng
+sequence of middlepoints: 6_KSCYng -> 4_HSTNng -> 3_DNVRng
+
+Destination 4_HSTNng
+sequence of middlepoints: 6_KSCYng -> 1_ATLAng -> 4_HSTNng
+
+Destination 5_IPLSng
+sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 5_IPLSng
+
+Destination 7_LOSAng
+sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 7_LOSAng
+
+Destination 8_NYCMng
+sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 8_NYCMng
+
+Destination 9_SNVAng
+sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 10_STTLng
+
+Destination 11_WASHng
+sequence of middlepoints: 6_KSCYng -> 0_ATLAM5 -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 7_LOSAng -> 1_ATLAng -> 0_ATLAM5
+
+Destination 1_ATLAng
+sequence of middlepoints: 7_LOSAng -> 0_ATLAM5 -> 1_ATLAng
+
+Destination 2_CHINng
+sequence of middlepoints: 7_LOSAng -> 0_ATLAM5 -> 2_CHINng
+
+Destination 3_DNVRng
+sequence of middlepoints: 7_LOSAng -> 3_DNVRng
+
+Destination 4_HSTNng
+sequence of middlepoints: 7_LOSAng -> 4_HSTNng
+
+Destination 5_IPLSng
+sequence of middlepoints: 7_LOSAng -> 0_ATLAM5 -> 5_IPLSng
+
+Destination 6_KSCYng
+sequence of middlepoints: 7_LOSAng -> 3_DNVRng -> 6_KSCYng
+
+Destination 8_NYCMng
+sequence of middlepoints: 7_LOSAng -> 0_ATLAM5 -> 8_NYCMng
+
+Destination 9_SNVAng
+sequence of middlepoints: 7_LOSAng -> 11_WASHng -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 7_LOSAng -> 10_STTLng
+
+Destination 11_WASHng
+sequence of middlepoints: 7_LOSAng -> 0_ATLAM5 -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 8_NYCMng -> 1_ATLAng -> 0_ATLAM5
+
+Destination 1_ATLAng
+sequence of middlepoints: 8_NYCMng -> 0_ATLAM5 -> 1_ATLAng
+
+Destination 2_CHINng
+sequence of middlepoints: 8_NYCMng -> 2_CHINng
+
+Destination 3_DNVRng
+sequence of middlepoints: 8_NYCMng -> 7_LOSAng -> 3_DNVRng
+
+Destination 4_HSTNng
+sequence of middlepoints: 8_NYCMng -> 11_WASHng -> 4_HSTNng
+
+Destination 5_IPLSng
+sequence of middlepoints: 8_NYCMng -> 7_LOSAng -> 5_IPLSng
+
+Destination 6_KSCYng
+sequence of middlepoints: 8_NYCMng -> 7_LOSAng -> 6_KSCYng
+
+Destination 7_LOSAng
+sequence of middlepoints: 8_NYCMng -> 0_ATLAM5 -> 7_LOSAng
+
+Destination 9_SNVAng
+sequence of middlepoints: 8_NYCMng -> 0_ATLAM5 -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 8_NYCMng -> 7_LOSAng -> 10_STTLng
+
+Destination 11_WASHng
+sequence of middlepoints: 8_NYCMng -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 9_SNVAng -> 1_ATLAng -> 0_ATLAM5
+
+Destination 1_ATLAng
+sequence of middlepoints: 9_SNVAng -> 0_ATLAM5 -> 1_ATLAng
+
+Destination 2_CHINng
+sequence of middlepoints: 9_SNVAng -> 0_ATLAM5 -> 2_CHINng
+
+Destination 3_DNVRng
+sequence of middlepoints: 9_SNVAng -> 7_LOSAng -> 3_DNVRng
+
+Destination 4_HSTNng
+sequence of middlepoints: 9_SNVAng -> 6_KSCYng -> 4_HSTNng
+
+Destination 5_IPLSng
+sequence of middlepoints: 9_SNVAng -> 0_ATLAM5 -> 5_IPLSng
+
+Destination 6_KSCYng
+sequence of middlepoints: 9_SNVAng -> 3_DNVRng -> 6_KSCYng
+
+Destination 7_LOSAng
+sequence of middlepoints: 9_SNVAng -> 6_KSCYng -> 7_LOSAng
+
+Destination 8_NYCMng
+sequence of middlepoints: 9_SNVAng -> 2_CHINng -> 8_NYCMng
+
+Destination 10_STTLng
+sequence of middlepoints: 9_SNVAng -> 10_STTLng
+
+Destination 11_WASHng
+sequence of middlepoints: 9_SNVAng -> 0_ATLAM5 -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 10_STTLng -> 1_ATLAng -> 0_ATLAM5
+
+Destination 1_ATLAng
+sequence of middlepoints: 10_STTLng -> 8_NYCMng -> 1_ATLAng
+
+Destination 2_CHINng
+sequence of middlepoints: 10_STTLng -> 3_DNVRng -> 2_CHINng
+
+Destination 3_DNVRng
+sequence of middlepoints: 10_STTLng -> 3_DNVRng
+
+Destination 4_HSTNng
+sequence of middlepoints: 10_STTLng -> 3_DNVRng -> 4_HSTNng
+
+Destination 5_IPLSng
+sequence of middlepoints: 10_STTLng -> 0_ATLAM5 -> 5_IPLSng
+
+Destination 6_KSCYng
+sequence of middlepoints: 10_STTLng -> 9_SNVAng -> 6_KSCYng
+
+Destination 7_LOSAng
+sequence of middlepoints: 10_STTLng -> 6_KSCYng -> 7_LOSAng
+
+Destination 8_NYCMng
+sequence of middlepoints: 10_STTLng -> 3_DNVRng -> 8_NYCMng
+
+Destination 9_SNVAng
+sequence of middlepoints: 10_STTLng -> 3_DNVRng -> 9_SNVAng
+
+Destination 11_WASHng
+sequence of middlepoints: 10_STTLng -> 3_DNVRng -> 11_WASHng
+
+Destination 0_ATLAM5
+sequence of middlepoints: 11_WASHng -> 1_ATLAng -> 0_ATLAM5
+
+Destination 1_ATLAng
+sequence of middlepoints: 11_WASHng -> 0_ATLAM5 -> 1_ATLAng
+
+Destination 2_CHINng
+sequence of middlepoints: 11_WASHng -> 8_NYCMng -> 2_CHINng
+
+Destination 3_DNVRng
+sequence of middlepoints: 11_WASHng -> 9_SNVAng -> 3_DNVRng
+
+Destination 4_HSTNng
+sequence of middlepoints: 11_WASHng -> 8_NYCMng -> 4_HSTNng
+
+Destination 5_IPLSng
+sequence of middlepoints: 11_WASHng -> 0_ATLAM5 -> 5_IPLSng
+
+Destination 6_KSCYng
+sequence of middlepoints: 11_WASHng -> 9_SNVAng -> 6_KSCYng
+
+Destination 7_LOSAng
+sequence of middlepoints: 11_WASHng -> 0_ATLAM5 -> 7_LOSAng
+
+Destination 8_NYCMng
+sequence of middlepoints: 11_WASHng -> 8_NYCMng
+
+Destination 9_SNVAng
+sequence of middlepoints: 11_WASHng -> 0_ATLAM5 -> 9_SNVAng
+
+Destination 10_STTLng
+sequence of middlepoints: 11_WASHng -> 9_SNVAng -> 10_STTLng
+
+***Next hops priority 3 (ecmp paths)***
+
+Destination 0_ATLAM5
+node: 0_ATLAM5, next hops: []
+node: 1_ATLAng, next hops: [0_ATLAM5]
+node: 2_CHINng, next hops: [5_IPLSng]
+node: 3_DNVRng, next hops: [6_KSCYng]
+node: 4_HSTNng, next hops: [1_ATLAng]
+node: 5_IPLSng, next hops: [1_ATLAng]
+node: 6_KSCYng, next hops: [4_HSTNng, 5_IPLSng]
+node: 7_LOSAng, next hops: [4_HSTNng]
+node: 8_NYCMng, next hops: [11_WASHng]
+node: 9_SNVAng, next hops: [7_LOSAng]
+node: 10_STTLng, next hops: [3_DNVRng, 9_SNVAng]
+node: 11_WASHng, next hops: [1_ATLAng]
+
+Destination 1_ATLAng
+node: 0_ATLAM5, next hops: [1_ATLAng]
+node: 1_ATLAng, next hops: []
+node: 2_CHINng, next hops: [5_IPLSng]
+node: 3_DNVRng, next hops: [6_KSCYng]
+node: 4_HSTNng, next hops: [1_ATLAng]
+node: 5_IPLSng, next hops: [1_ATLAng]
+node: 6_KSCYng, next hops: [5_IPLSng, 4_HSTNng]
+node: 7_LOSAng, next hops: [4_HSTNng]
+node: 8_NYCMng, next hops: [11_WASHng]
+node: 9_SNVAng, next hops: [7_LOSAng]
+node: 10_STTLng, next hops: [3_DNVRng, 9_SNVAng]
+node: 11_WASHng, next hops: [1_ATLAng]
+
+Destination 2_CHINng
+node: 0_ATLAM5, next hops: [1_ATLAng]
+node: 1_ATLAng, next hops: [5_IPLSng]
+node: 2_CHINng, next hops: []
+node: 3_DNVRng, next hops: [6_KSCYng]
+node: 4_HSTNng, next hops: [1_ATLAng, 6_KSCYng]
+node: 5_IPLSng, next hops: [2_CHINng]
+node: 6_KSCYng, next hops: [5_IPLSng]
+node: 7_LOSAng, next hops: [4_HSTNng]
+node: 8_NYCMng, next hops: [2_CHINng]
+node: 9_SNVAng, next hops: [3_DNVRng]
+node: 10_STTLng, next hops: [3_DNVRng]
+node: 11_WASHng, next hops: [8_NYCMng]
+
+Destination 3_DNVRng
+node: 0_ATLAM5, next hops: [1_ATLAng]
+node: 1_ATLAng, next hops: [4_HSTNng, 5_IPLSng]
+node: 2_CHINng, next hops: [5_IPLSng]
+node: 3_DNVRng, next hops: []
+node: 4_HSTNng, next hops: [6_KSCYng]
+node: 5_IPLSng, next hops: [6_KSCYng]
+node: 6_KSCYng, next hops: [3_DNVRng]
+node: 7_LOSAng, next hops: [9_SNVAng]
+node: 8_NYCMng, next hops: [2_CHINng]
+node: 9_SNVAng, next hops: [3_DNVRng]
+node: 10_STTLng, next hops: [3_DNVRng]
+node: 11_WASHng, next hops: [1_ATLAng]
+
+Destination 4_HSTNng
+node: 0_ATLAM5, next hops: [1_ATLAng]
+node: 1_ATLAng, next hops: [4_HSTNng]
+node: 2_CHINng, next hops: [5_IPLSng]
+node: 3_DNVRng, next hops: [6_KSCYng]
+node: 4_HSTNng, next hops: []
+node: 5_IPLSng, next hops: [1_ATLAng, 6_KSCYng]
+node: 6_KSCYng, next hops: [4_HSTNng]
+node: 7_LOSAng, next hops: [4_HSTNng]
+node: 8_NYCMng, next hops: [11_WASHng]
+node: 9_SNVAng, next hops: [7_LOSAng]
+node: 10_STTLng, next hops: [3_DNVRng, 9_SNVAng]
+node: 11_WASHng, next hops: [1_ATLAng]
+
+Destination 5_IPLSng
+node: 0_ATLAM5, next hops: [1_ATLAng]
+node: 1_ATLAng, next hops: [5_IPLSng]
+node: 2_CHINng, next hops: [5_IPLSng]
+node: 3_DNVRng, next hops: [6_KSCYng]
+node: 4_HSTNng, next hops: [1_ATLAng, 6_KSCYng]
+node: 5_IPLSng, next hops: []
+node: 6_KSCYng, next hops: [5_IPLSng]
+node: 7_LOSAng, next hops: [4_HSTNng]
+node: 8_NYCMng, next hops: [2_CHINng]
+node: 9_SNVAng, next hops: [3_DNVRng]
+node: 10_STTLng, next hops: [3_DNVRng]
+node: 11_WASHng, next hops: [1_ATLAng]
+
+Destination 6_KSCYng
+node: 0_ATLAM5, next hops: [1_ATLAng]
+node: 1_ATLAng, next hops: [5_IPLSng, 4_HSTNng]
+node: 2_CHINng, next hops: [5_IPLSng]
+node: 3_DNVRng, next hops: [6_KSCYng]
+node: 4_HSTNng, next hops: [6_KSCYng]
+node: 5_IPLSng, next hops: [6_KSCYng]
+node: 6_KSCYng, next hops: []
+node: 7_LOSAng, next hops: [4_HSTNng]
+node: 8_NYCMng, next hops: [2_CHINng]
+node: 9_SNVAng, next hops: [3_DNVRng]
+node: 10_STTLng, next hops: [3_DNVRng]
+node: 11_WASHng, next hops: [1_ATLAng]
+
+Destination 7_LOSAng
+node: 0_ATLAM5, next hops: [1_ATLAng]
+node: 1_ATLAng, next hops: [4_HSTNng]
+node: 2_CHINng, next hops: [5_IPLSng]
+node: 3_DNVRng, next hops: [9_SNVAng]
+node: 4_HSTNng, next hops: [7_LOSAng]
+node: 5_IPLSng, next hops: [1_ATLAng, 6_KSCYng]
+node: 6_KSCYng, next hops: [4_HSTNng]
+node: 7_LOSAng, next hops: []
+node: 8_NYCMng, next hops: [11_WASHng]
+node: 9_SNVAng, next hops: [7_LOSAng]
+node: 10_STTLng, next hops: [9_SNVAng]
+node: 11_WASHng, next hops: [1_ATLAng]
+
+Destination 8_NYCMng
+node: 0_ATLAM5, next hops: [1_ATLAng]
+node: 1_ATLAng, next hops: [11_WASHng]
+node: 2_CHINng, next hops: [8_NYCMng]
+node: 3_DNVRng, next hops: [6_KSCYng]
+node: 4_HSTNng, next hops: [1_ATLAng]
+node: 5_IPLSng, next hops: [2_CHINng]
+node: 6_KSCYng, next hops: [5_IPLSng]
+node: 7_LOSAng, next hops: [4_HSTNng]
+node: 8_NYCMng, next hops: []
+node: 9_SNVAng, next hops: [7_LOSAng, 3_DNVRng]
+node: 10_STTLng, next hops: [3_DNVRng]
+node: 11_WASHng, next hops: [8_NYCMng]
+
+Destination 9_SNVAng
+node: 0_ATLAM5, next hops: [1_ATLAng]
+node: 1_ATLAng, next hops: [4_HSTNng]
+node: 2_CHINng, next hops: [5_IPLSng]
+node: 3_DNVRng, next hops: [9_SNVAng]
+node: 4_HSTNng, next hops: [7_LOSAng]
+node: 5_IPLSng, next hops: [6_KSCYng]
+node: 6_KSCYng, next hops: [3_DNVRng]
+node: 7_LOSAng, next hops: [9_SNVAng]
+node: 8_NYCMng, next hops: [11_WASHng, 2_CHINng]
+node: 9_SNVAng, next hops: []
+node: 10_STTLng, next hops: [9_SNVAng]
+node: 11_WASHng, next hops: [1_ATLAng]
+
+Destination 10_STTLng
+node: 0_ATLAM5, next hops: [1_ATLAng]
+node: 1_ATLAng, next hops: [4_HSTNng, 5_IPLSng]
+node: 2_CHINng, next hops: [5_IPLSng]
+node: 3_DNVRng, next hops: [10_STTLng]
+node: 4_HSTNng, next hops: [7_LOSAng, 6_KSCYng]
+node: 5_IPLSng, next hops: [6_KSCYng]
+node: 6_KSCYng, next hops: [3_DNVRng]
+node: 7_LOSAng, next hops: [9_SNVAng]
+node: 8_NYCMng, next hops: [2_CHINng]
+node: 9_SNVAng, next hops: [10_STTLng]
+node: 10_STTLng, next hops: []
+node: 11_WASHng, next hops: [1_ATLAng]
+
+Destination 11_WASHng
+node: 0_ATLAM5, next hops: [1_ATLAng]
+node: 1_ATLAng, next hops: [11_WASHng]
+node: 2_CHINng, next hops: [8_NYCMng]
+node: 3_DNVRng, next hops: [6_KSCYng]
+node: 4_HSTNng, next hops: [1_ATLAng]
+node: 5_IPLSng, next hops: [1_ATLAng]
+node: 6_KSCYng, next hops: [4_HSTNng, 5_IPLSng]
+node: 7_LOSAng, next hops: [4_HSTNng]
+node: 8_NYCMng, next hops: [11_WASHng]
+node: 9_SNVAng, next hops: [7_LOSAng]
+node: 10_STTLng, next hops: [3_DNVRng, 9_SNVAng]
+node: 11_WASHng, next hops: []
+

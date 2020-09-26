@@ -9,12 +9,11 @@ def main():
 
     # run te
     for t in range(args.num_test):
-        if t % args.T == 0:
+        if t % (args.T + 1) == 0:
             repetita_args = util.get_repetita_args(args, t)
             print(' '.join(repetita_args))
             stdout = util.call(repetita_args)
             print(stdout)
-            break
 
 
 if __name__ == '__main__':
