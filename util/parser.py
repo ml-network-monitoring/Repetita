@@ -1,6 +1,6 @@
 import re
 
-N_dict = {'abilene_tm': 12, 'geant_tm': 30, 'brain_tm': 9}
+N_dict = {'abilene_tm': 12, 'geant_tm': 40, 'brain_tm': 9}
 
 def parse_routing(t, args):
     N = N_dict[args.dataset]
@@ -41,7 +41,7 @@ def parse_result(t, stdout, args):
     mlus = [float(mlu) for mlu in mlus]
     # parse rc
     if t >= args.T + 1:
-        prev_routing = parse_routing(t - args.T - 1, args)
+        prev_routing = parse_routing(t - args.T, args)
         routing = parse_routing(t, args)
         rc = get_rc(prev_routing, routing, args)
     return mlus, rc

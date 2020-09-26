@@ -11,19 +11,19 @@ def main():
     mlus = []
     rcs = []
 
-    # at every T + 1 step
+    # at every T step
     for t in range(args.num_test):
-        if t % (args.T + 1) == 0:
-
+        if t % args.T == 0:
             repetita_args = util.get_repetita_args(args, t)
+            print('command:', ' '.join(repetita_args))
             stdout = util.call(repetita_args)
-            mlu, rc = util.parse_result(t, stdout, args)
-            mlus.append(mlu)
-            if rc is not None:
-                rcs.append(rc)
-
-        if t > 30:
-            break
+            if stdout:
+                print('stdout:', stdout)
+                mlu, rc = util.parse_result(t, stdout, args)
+                if len(mlu) == args.T:
+                    mlus.append(mlu)
+                if rc is not None:
+                    rcs.append(rc)
 
     util.save(mlus, rcs, args)
 

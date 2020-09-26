@@ -1,21 +1,19 @@
-import re
+import util
 
-N = 12 # if else thoi
-routing = [[[] for i in range(N)] for j in range(N)]
-routing_txt = open('../result/abilene_tm/routing.0.txt').read()
+def main():
+    # get argument
+    args = util.get_args()
 
-flag = False
-for line in routing_txt.split('\n'):
-    if 'sr paths' in line:
-        flag = True
-    if flag:
-        if 'Destination' in line:
-            i = int(re.findall('(\d+)_', line)[0])
-        if 'sequence of middlepoints:' in line:
-            nodes = [int(_) for _ in re.findall('(\d+)_', line)]
-            j = nodes[0]
-            k = nodes[1:]
-            routing[i][j] = k
-    if 'ecmp paths' in line:
-        break
+    # print argument
+    util.print_args(args)
 
+    # at every T + 1 step
+    t = 1995
+    repetita_args = util.get_repetita_args(args, t)
+    print('command:', ' '.join(repetita_args))
+    stdout = util.call(repetita_args)
+    print('stdout:', stdout)
+
+
+if __name__ == '__main__':
+    main()
