@@ -48,6 +48,7 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
         }
 
         // compute the new traffic matrix, splitting demand so as to match SR paths
+        System.out.println("compute the new traffic matrix, splitting demand so as to match SR paths");
         if(paths != null) {
             for (int demand = 0; demand < demands.nDemands; demand++) {
                 // if the demand has to be ignored, do nothing
