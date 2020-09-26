@@ -40,6 +40,14 @@ def print_args(args):
     print('---------------------------------------')
 
 def get_repetita_args(args, t):
+    # make result folder if needed
+    path = '../result'
+    if not os.path.exists(path):
+        os.mkdir(path)
+    path = os.path.join(path, args.dataset)
+    if not os.path.exists(path):
+        os.mkdir(path)
+    # add args
     args = ['./repetita',
             '-graph',
             os.path.join(args.home,
@@ -58,7 +66,7 @@ def get_repetita_args(args, t):
             '-scenario',
             args.scenario,
             '-outpaths',
-            'routing.{}.txt'.format(t),
+            '{}/routing.{}.txt'.format(path, t),
             '-t',
             '1',
             ]
