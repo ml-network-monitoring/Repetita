@@ -51,6 +51,7 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
         System.out.println("compute the new traffic matrix, splitting demand so as to match SR paths");
         if(paths != null) {
             for (int demand = 0; demand < demands.nDemands; demand++) {
+                System.out.println("begin demand#" + demand);
                 // if the demand has to be ignored, do nothing
                 if(this.demandsToIgnore.contains(demands.label[demand])){
                     continue;
@@ -72,7 +73,11 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
                     }
                     simulatedDemands.add(demands.label[demand]);
                 }
+                System.out.println("end demand#" + demand);
             }
+        }
+        else {
+            System.out.println("paths is null");
         }
 
         // compute ECMP paths for the traffic matrix reflecting SR paths
