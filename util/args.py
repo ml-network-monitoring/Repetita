@@ -58,6 +58,8 @@ def get_repetita_args(args, t):
             '-scenario',
             args.scenario,
             '-outpaths',
-            'routing.{}.txt'.format(t)
+            'routing.{}.txt'.format(t),
+            '-t',
+            '1',
             ]
     return args
