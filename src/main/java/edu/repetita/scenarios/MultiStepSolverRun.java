@@ -61,21 +61,22 @@ public class MultiStepSolverRun extends Scenario {
 
         for (int iteration = 0; iteration < nIterations; iteration++) {
 
-            // create new analysis
             // extract the new demand from demandsList
             Demands currentDemands = demandsList.get(iteration % demandsList.size());
             // create a new (minimalistic) setting and analyze it
             Setting currentSetting = new Setting();
-            System.out.println("iteration " + iteration);
             currentSetting.setTopology(topology);
-            System.out.println("iteration " + iteration);
             currentSetting.setDemands(currentDemands);
-            System.out.println("iteration " + iteration);
             currentSetting.setRoutingConfiguration(lastConfig);
-            System.out.println("iteration " + iteration);
-            postOpt = analyzer.analyze(currentSetting);
-            System.out.println("iteration " + iteration);
+            this.analyses.put("Iteration " + Integer.toString(iteration), analyzer.analyze(currentSetting,"pre-optimization"));
+
             System.out.println(postOpt.maxLinkLoad);
+        }
+
+        // print results
+        for (int it = 0; it < nIterations; it++) {
+            this.print("\ndemand change " + it);
+            this.analyses.get("Iteration " + it + " pre-optimization").printTrafficSummary();
         }
         // END: Thanh-san code
 
