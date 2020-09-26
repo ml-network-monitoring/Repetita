@@ -67,8 +67,7 @@ public class MultiStepSolverRun extends Scenario {
         for (int iteration = 0; iteration < nIterations; iteration++) {
             // extract the new demand from demandsList
             currentDemands = demandsList.get(iteration);
-            trafficMatrix = currentDemands.toTrafficMatrix(currentDemands, 12);
-            System.out.println(trafficMatrix);
+            System.out.println(currentDemands.amount);
             // create a new (minimalistic) setting and analyze it
             currentSetting.setDemands(currentDemands);
             System.out.println("before analyses");
