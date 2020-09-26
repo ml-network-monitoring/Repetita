@@ -37,7 +37,9 @@ public class Analyzer {
     public String getDescription(){
         List<String> descriptions = new ArrayList<>();
         for (SpecializedAnalyzer sa: specializedAnalyzers){
+            System.out.println(sa.getDescription());
             descriptions.addAll(sa.getDescription());
+            System.out.println(sa.getDescription());
         }
         return "Performed analyses:\n" + RepetitaWriter.formatAsListOneColumn(descriptions);
     }
@@ -53,7 +55,7 @@ public class Analyzer {
 
         // lets the specialized analyzers fill the analysis
         for (SpecializedAnalyzer sa: this.specializedAnalyzers){
-            sa.analyze(setting,result);
+            sa.analyze(setting, result);
         }
 
         return result;

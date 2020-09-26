@@ -29,7 +29,6 @@ public class FlowSpecializedAnalyzer implements SpecializedAnalyzer {
         flowSimulator.computeFlows();
 
         analysis.maxLinkLoad = this.getMaxLoad();
-        System.out.println("maxLinkLoad: " + analysis.maxLinkLoad);
         double mcfLoad = -1;
         if (this.compareWithMCF){
             MCF mcfComputer = new MCF(setting.getTopology(), setting.getDemands(), false);
@@ -37,7 +36,6 @@ public class FlowSpecializedAnalyzer implements SpecializedAnalyzer {
         }
         analysis.maxLinkLoadLowerBound = mcfLoad;
     }
-
 
     @Override
     public String compare(Analysis firstAnalysis, Analysis secondAnalysis, String firstTag, String secondTag){
