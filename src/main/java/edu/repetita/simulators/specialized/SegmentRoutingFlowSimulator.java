@@ -69,7 +69,7 @@ public class SegmentRoutingFlowSimulator extends SpecializedFlowSimulator {
                         int subSrc = paths.getPathElement(demand, position);
                         int subDest = paths.getPathElement(demand, position + 1);
                         traffic[subSrc][subDest] += amount;
-                        System.out.println("traffic[" + subSrc + "][" + subDest + "] = " + amount)
+                        System.out.println("traffic[" + subSrc + "][" + subDest + "] = " + amount);
                         currNextHops.append(topology.nodeLabel[subSrc] + " -> ");
                         if (position == positions - 1){
                             currNextHops.append(topology.nodeLabel[demands.dest[demand]] + "\n");
