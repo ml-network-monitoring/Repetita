@@ -117,7 +117,7 @@ public class Main {
 		String graphFilename = null;
 		String demandsFilename = null;
         ArrayList<String> demandChangesFilenames = new ArrayList<>();
-		double timeLimit = 10;                              
+		double timeLimit = 10;
 		int verboseLevel = 0;
 		boolean help = false;
 
@@ -127,7 +127,6 @@ public class Main {
 		// parse command line arguments
 		int i = 0;
 		while (i < args.length) {
-
 			switch(args[i]) {
 			case "-h": 
 				help=true;
@@ -147,14 +146,8 @@ public class Main {
 
             case "-demandchanges":
                 String next = args[++i];
-
                 while (! next.startsWith("-")){
-                    // demandChangesFilenames.add(next);
-                    String[] nextSplit = next.split("\\s+");
-                    for(int j=0; j<nextSplit.length; j++){
-                        demandChangesFilenames.add(nextSplit[j]);
-                    }
-
+                    demandChangesFilenames.add(next);
                     next = args[++i];
                 }
                 i--;

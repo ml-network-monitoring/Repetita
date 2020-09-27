@@ -53,7 +53,7 @@ public class Analyzer {
 
         // lets the specialized analyzers fill the analysis
         for (SpecializedAnalyzer sa: this.specializedAnalyzers){
-            sa.analyze(setting, result);
+            sa.analyze(setting,result);
         }
 
         return result;
