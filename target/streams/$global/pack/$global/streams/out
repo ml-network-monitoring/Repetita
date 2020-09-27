@@ -43,14 +43,14 @@
 [0m[[0minfo[0m] [0mcommons-codec:commons-codec:1.3[0m
 [0m[[0minfo[0m] [0mjtidy:jtidy:4aug2000r7-dev[0m
 [0m[[0minfo[0m] [0munmanaged dependencies:[0m
-[0m[[0minfo[0m] [0m/home/thanh/code/lib/gurobi.jar[0m
+[0m[[0minfo[0m] [0m/home/thanh/_/code/lib/gurobi.jar[0m
 [0m[[0minfo[0m] [0mexplicit dependencies:[0m
 [0m[[0minfo[0m] [0mCreate a bin folder: target/pack/bin[0m
 [0m[[0minfo[0m] [0mGenerating launch scripts[0m
 [0m[[0minfo[0m] [0mmain class for repetita: edu.repetita.main.Main[0m
 [0m[[0minfo[0m] [0mGenerating target/pack/bin/repetita[0m
 [0m[[0minfo[0m] [0mGenerating target/pack/bin/repetita.bat[0m
-[0m[[0minfo[0m] [0mpacked resource directories = /home/thanh/code/src/pack[0m
+[0m[[0minfo[0m] [0mpacked resource directories = /home/thanh/_/code/src/pack[0m
 [0m[[0minfo[0m] [0mGenerating target/pack/Makefile[0m
 [0m[[0minfo[0m] [0mGenerating target/pack/VERSION[0m
 [0m[[0minfo[0m] [0mdone.[0m
