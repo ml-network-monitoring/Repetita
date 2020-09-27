@@ -1,6 +1,6 @@
 import re
 
-N_dict = {'abilene_tm': 12, 'geant_tm': 40, 'brain_tm': 9}
+N_dict = {'abilene_tm': 12, 'geant_tm': 22, 'brain_tm': 9}
 
 def parse_routing(t, args):
     N = N_dict[args.dataset]
